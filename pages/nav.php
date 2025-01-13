@@ -7,7 +7,7 @@
     <link rel="icon" href="logo.png" type="image/x-icon">
 </head>
 <body>
-    <nav>
+    <nav class="nav">
 
         <ul>
             <a href="#home">
