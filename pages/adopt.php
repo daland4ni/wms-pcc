@@ -8,6 +8,8 @@
 </head>
 
 <body>
+
+<?php include "nav.php"; ?>
     <form>
         <input type="text" placeholder="Full Name"><br />
         <input type="number" placeholder="Age"><br />
