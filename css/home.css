@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.bgc {
+    background-color: #D1BDC7;
+}
+/* General styling for the container */
+.container-1 {
+    display: flex; /* Arrange elements side by side */
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Space out the content */
+    padding: 45px;
+    padding-top: 20px;
+    padding-bottom: 65px;
+    border-radius: 8px; /* Rounded corners */
+    font-family: Poppins;
+    margin-bottom: 40px;
+}
+
+/* Left section styling */
+.container-1 .left img {
+    width: 500px; /* Adjust size of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Right section styling */
+.container-1 .right {
+    text-align: center;
+}
+
+.container-1 .right .t1 {
+    font-family: Poppins;
+    font-size: 96px;
+    font-weight: bold;
+    color: #3C5190; /* Blue text for the main header */
+    margin-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+}
+
+.container-1 .right .subt {
+    font-size: 32px;
+    color: #3C5190; /* Subtle gray for subtitle */
+    margin-bottom: 20px;
+    padding-top: 0px;
+}
+
+/* Button styling */
+.container-1 .right button {
+    padding: 10px 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #3C5190; /* Blue text */
+    background-color: #D9D9D9; /* Light blue background */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    margin-right: 20px; /* Space between buttons */
+    border-color: #D9D9D9;
+}
+
+.container-1 .right button:hover {
+    background-color: #D9D9D9; /* Darker shade of blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+
+
+
+
+
+/* General container styling */
+.container-2 {
+    background-color: #EAD8E6; /* Light purple background */
+    padding: 50px;
+    text-align: center; /* Center-align the heading */
+    font-family: Poppins;
+}
+
+/* Heading styling */
+.container-2 h2 {
+    font-size: 40px;
+    color: #3C5190; /* Blue text */
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+}
+
+/* Featured container grid */
+.featured-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+    gap: 20px; /* Space between grid items */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Individual grid items */
+.featured-container div {
+    background-color: #F5F5F5; /* Light gray background for each item */
+    padding: 10px;
+    border-radius: 8px; /* Rounded edges */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    width: 70%;
+}
+
+/* Images inside grid items */
+.featured-container div img {
+    max-width: 90%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Slightly rounded image corners */
+    margin-bottom: 0px; /* Space below image */
+}
+
+/* Pet names below images */
+.featured-container div::after {
+    content: attr(data-name); /* Use a custom attribute for the name */
+    display: block;
+    font-size: 16px;
+    font-weight: regular;
+    color: #3C5190; /* Blue text */
+    margin-top: 5px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 992px) {
+    .featured-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .featured-container {
+        grid-template-columns: 1fr; /* 1 column on extra-small screens */
+    }
+}
+
+
+
+/* Container styling */
+.container-3 {
+    background-color: #EAD8E6; /* Light purple background */
+    padding: 20px 30px; /* Spacing inside the container */
+    border-radius: 10px; /* Rounded corners */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Space between text and image */
+    gap: 20px; /* Add space between flex items */
+    font-family: Poppins;
+    padding-bottom: 70px;
+}
+
+/* Heading styling */
+.container-3 h1 {
+    font-size: 96px; /* Large heading size */
+    color: #3C5190; /* Blue text */
+    margin-bottom: 10px; /* Space below the heading */
+    font-weight: bold;
+}
+
+/* Paragraph styling */
+.container-3 p {
+    font-size: 25px;
+    color: #4F4F4F; /* Neutral dark gray */
+    line-height: 1.8; /* Improved readability */
+    margin: 0; /* Remove default margin */
+    flex: 1; /* Allow the text to take up available space */
+    padding: 30px;
+}
+
+/* Image styling */
+.container-3 img {
+    width: 300px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Slight rounding for consistency */
+    margin-top: 160px;
+}
+
+.container-3 button {
+    background-color: #3C5190; /* Blue background */
+    color: #FFF; /* White text */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Font size */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    margin-top: 20px;
+    font-family: Poppins;
+    
+}
+
+
+
+
+/* Testimonials container */
+.container-4 {
+    background-color: #EAD8E6; /* Light purple background */
+    padding: 10px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center-align text */
+}
+
+/* Heading styling */
+.container-4 h1 {
+    font-size: 96px; /* Large font size for headings */
+    color: #3C5190; /* Blue color for headings */
+    margin-bottom: 20px; /* Space below the heading */
+    font-weight: bold;
+    font-family: Poppins;
+}
+
+/* Testimonial items */
+.container-4 div {
+    display: inline-block; /* Display divs inline */
+    margin: 15px; /* Add spacing between items */
+    width: 200px; /* Fixed width for each testimonial */
+    text-align: center; /* Center-align each testimonial's content */
+}
+
+/* Testimonial images */
+.container-4 img {
+    width: 200px; /* Fixed image size */
+    height: 200px; /* Fixed image size */
+    border-radius: 50%; /* Circular images */
+    border: 2px solid #3C5190; /* Add a border around images */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+/* Testimonial text */
+.container-4 p {
+    font-size: 14px; /* Small font size for quotes */
+    color: #4F4F4F; /* Neutral dark gray color */
+    font-style: italic; /* Italicize text for quotes */
+    margin-top: 0;
+    line-height: 1.6; /* Improve readability */
+}
+
+/* "Adopt Now!" heading */
+.container-4 h1:last-of-type {
+    margin-top: 30px; /* Space above the "Adopt Now!" heading */
+    color: #3C5190; /* Same blue as other headings */
+    font-size: 50px;
+}
+
