@@ -8,21 +8,32 @@
     <link rel="icon" href="../pics/logo.png" type="image/x-icon">
 </head>
 <body>
-    <nav>
+    <?php include "nav.php"; ?>
 
-        <ul>
-            <a href="#home">
-                <img src="../pics/logo.png" alt="Pet Connet Caloocan Logo" style="height: 80px;">
-            </a>
-            <a href="#home">Pet Connect - Caloocan</a>
-            <a href="#home">Home</a>
-            <a href="#petProf">Pet Profiles</a>
-            <a href="#match">Match-A-Pet</a>
-            <a href="#adopt">Adopt Now!</a>
-            <a href="#shelter">Available Shelters</a>
-        </ul>
-    </nav>
+    <div>
+        <div class="left">
+            <img src="../pics/CatDogLogo.png">
+        </div>
 
+        <div class="right">
+            <h1 class="t1">Hi Pet Lover!</h1>
+            <h2 class="subt">Find your furry pet today</h2>
+
+            <button class="bt1">Explore Pets</button>
+            <button class="bt2">Start Adopting</button>
+        </div>
+    </div>
+
+    <div>
+        <h2>Featured Pets</h2>
+        <div class="featured-container">
+            <div>
+                <img src="../pics/Cats/C1.jpg">
+            </div>
+
+        </div>
+
+    </div>
     
 </body>
 </html>
