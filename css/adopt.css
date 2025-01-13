@@ -1,0 +1,22 @@
+.moolah {
+    background-color: #D1BDC7;
+}
+
+.HeaderText {
+    color: #3C5190;
+    text-align: center;
+}
+
+.container {
+    background-color: #D9D9D9;
+    float: right;
+    width: 50%;
+    margin-right: 24%;
+    margin-left: 25%;
+    border-radius: 8px;
+}
+
+.content-box {
+    margin-left: 5%;
+    margin-right: 5%;
+}
