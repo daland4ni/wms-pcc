@@ -28,23 +28,6 @@
         <input type="radio" id="mi-op6">
         <label for="mi-op6">> PHP 75,000</label><br>
 
-        
-
-        <!--
-        
-        Name
-        Age
-        Monthly Income
-        Time Commitment
-        Allergens
-        Experience in Pet Caring
-        Inspections
-        Processing Fee
-        Other pet
-        Long-term commitment
-
-
-        -->
     </form>
 </body>
 
