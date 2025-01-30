@@ -11,7 +11,7 @@
 </head>
 <body class="bgc">
     <?php include "nav.php"; ?>
-<!------------------------------------------------------------------->
+<!------------------------------------------------------------------>
     <div class="container-1">
         <div class="left">
             <img src="../pics/CatDogLogo.png">
