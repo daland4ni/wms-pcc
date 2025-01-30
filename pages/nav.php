@@ -19,10 +19,10 @@
             <a href="#home">Pet Connect - Caloocan</a>
         </div>
         <div class="nav-right">
-            <a href="#home">Home</a> <!-- justine -->
-            <a href="#petProf">Pet Profiles</a> <!-- adelaine -->
+            <a href="home.php">Home</a> <!-- justine -->
+            <a href="petProf.php">Pet Profiles</a> <!-- adelaine -->
             <a href="#match">Match-A-Pet</a> <!-- aeron -->
-            <a href="#adopt">Adopt Now!</a> <!-- aeron -->
+            <a href="adopt.php">Adopt Now!</a> <!-- aeron -->
             <a href="#shelter">Available Shelters</a> <!-- rence -->
         </div>
     </nav>
