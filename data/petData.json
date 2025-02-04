@@ -7,7 +7,8 @@
         "age": 1,
         "breed": "Tabby",
         "characteristics": [],
-        "img": "../pics/Cats/C1.jpg"
+        "img": "../pics/Cats/C1.jpg",
+        "description": "Sample test description"
     },
     {
         "petID": 2,
@@ -17,7 +18,8 @@
         "age": 2,
         "breed": "Ginger Tabby",
         "characteristics": [],
-        "img": "../pics/Cats/C2.jpg"
+        "img": "../pics/Cats/C2.jpg",
+        "description": "Sample test description"
     },
     {
         "petID": 3,
@@ -27,7 +29,8 @@
         "age": 0.3,
         "breed": "Cross Breed",
         "characteristics": [],
-        "img": "../pics/Dogs/D1.jpg"
+        "img": "../pics/Dogs/D1.jpg",
+        "description": "Sample test description"
     },
     {
         "petID": 4,
@@ -37,7 +40,8 @@
         "age": 3,
         "breed": "Cross Breed",
         "characteristics": [],
-        "img": "../pics/Cats/C3.jpg"
+        "img": "../pics/Cats/C3.jpg",
+        "description": "Sample test description"
     },
     {
         "petID": 5,
@@ -47,7 +51,8 @@
         "age": 0.3,
         "breed": "Cross Breed",
         "characteristics": [],
-        "img": "../pics/Dogs/D2.jpg"
+        "img": "../pics/Dogs/D2.jpg",
+        "description": "Sample test description"
     },
     {
         "petID": 6,
@@ -57,6 +62,139 @@
         "age": 1,
         "breed": "Aspin",
         "characteristics": [],
-        "img": "../pics/Dogs/D3.jpg"
+        "img": "../pics/Dogs/D3.jpg",
+        "description": "Sample test description"
+    },
+    {
+        "petID": 7,
+        "name": "Marvic",
+        "type": "Cat",
+        "sex": "Male",
+        "age": 1,
+        "breed": "Ginger Tabby",
+        "characteristics": [],
+        "img": "../pics/Cats/C4.jpg",
+        "description": "Sample test description"
+    },
+    {
+        "petID": 8,
+        "name": "Rowine",
+        "type": "Dog",
+        "sex": "Male",
+        "age": 0.7,
+        "breed": "Shih Tzu",
+        "characteristics": [],
+        "img": "../pics/Dogs/D4.png",
+        "description": "Sample test description"
+    },
+    {
+        "petID": 9,
+        "name": "Edda",
+        "type": "Dog",
+        "sex": "Male",
+        "age": 0.5,
+        "breed": "Canaan",
+        "characteristics": [],
+        "img": "../pics/Dogs/D5.png",
+        "description": "Sample test description"
+    },
+    {
+        "petID": 10,
+        "name": "Trisha",
+        "type": "Cat",
+        "sex": "Female",
+        "age": 2,
+        "breed": "Siamese",
+        "characteristics": [],
+        "img": "../pics/Cats/C5.jpg",
+        "description": "Sample test description"
+    },
+    {
+        "petID": 11,
+        "name": "Tom",
+        "type": "Dog",
+        "sex": "Male",
+        "age": 4,
+        "breed": "Aspin",
+        "characteristics": [],
+        "img": "../pics/Dogs/D6.png",
+        "description": "Sample test description"
+    },
+    {
+        "petID": 12,
+        "name": "Mark",
+        "type": "Cat",
+        "sex": "Male",
+        "age": 4,
+        "breed": "Cross Breed",
+        "characteristics": [],
+        "img": "../pics/Cats/Csquare.png",
+        "description": "Sample test description"
+    },
+    {
+        "petID": 13,
+        "name": "James",
+        "type": "Cat",
+        "sex": "Male",
+        "age": 0.8,
+        "breed": "Cross Breed",
+        "characteristics": [],
+        "img": "../pics/Cats/C7.png",
+        "description": "Sample test description"
+    },
+    {
+        "petID": 14,
+        "name": "Trishia",
+        "type": "Dog",
+        "sex": "Female",
+        "age": 1,
+        "breed": "Aspin",
+        "characteristics": [],
+        "img": "../pics/Dogs/D7.png",
+        "description": "Sample test description"
+    },
+    {
+        "petID": 15,
+        "name": "Angelo",
+        "type": "Dog",
+        "sex": "Male",
+        "age": 2,
+        "breed": "Cross Breed",
+        "characteristics": [],
+        "img": "../pics/Dogs/D8.png",
+        "description": "Sample test description"
+    },
+    {
+        "petID": 16,
+        "name": "Jamaica",
+        "type": "Cat",
+        "sex": "Female",
+        "age": 3,
+        "breed": "Cross Breed",
+        "characteristics": [],
+        "img": "../pics/Cats/C8.png",
+        "description": "Sample test description"
+    },
+    {
+        "petID": 17,
+        "name": "Jane",
+        "type": "Dog",
+        "sex": "Female",
+        "age": 0.3,
+        "breed": "Jack Russel",
+        "characteristics": [],
+        "img": "../pics/Dogs/D9.png",
+        "description": "Sample test description"
+    },
+    {
+        "petID": 18,
+        "name": "Joy",
+        "type": "Cat",
+        "sex": "Female",
+        "age": 0.2,
+        "breed": "British Shorthair",
+        "characteristics": [],
+        "img": "../pics/Cats/C9.png",
+        "description": "Sample test description"
     }
 ]
