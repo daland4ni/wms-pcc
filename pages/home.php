@@ -21,8 +21,8 @@
             <h1 class="t1">Hi Pet Lover!</h1>
             <h3 class="subt">Find your furry pet today</h3>
 
-            <button class="bt1">Explore Pets</button>
-            <button class="bt2">Start Adopting</button>
+            <a href="petProf.php"><button class="bt1">Explore Pets</button></a>
+            <a href="adopt.php"></a><button class="bt2">Start Adopting</button></a>
         </div>
     </div>
 <!-------------------------------------------------------------------->

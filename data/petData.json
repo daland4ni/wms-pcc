@@ -1,0 +1,62 @@
+[
+    {
+        "petID": 1,
+        "name": "Andrew",
+        "type": "Cat",
+        "sex": "Male",
+        "age": 1,
+        "breed": "Tabby",
+        "characteristics": [],
+        "img": "../pics/Cats/C1.jpg"
+    },
+    {
+        "petID": 2,
+        "name": "Aivan",
+        "type": "Cat",
+        "sex": "Male",
+        "age": 2,
+        "breed": "Ginger Tabby",
+        "characteristics": [],
+        "img": "../pics/Cats/C2.jpg"
+    },
+    {
+        "petID": 3,
+        "name": "Julius",
+        "type": "Dog",
+        "sex": "Male",
+        "age": 0.3,
+        "breed": "Cross Breed",
+        "characteristics": [],
+        "img": "../pics/Dogs/D1.jpg"
+    },
+    {
+        "petID": 4,
+        "name": "Trina",
+        "type": "Cat",
+        "sex": "Female",
+        "age": 3,
+        "breed": "Cross Breed",
+        "characteristics": [],
+        "img": "../pics/Cats/C3.jpg"
+    },
+    {
+        "petID": 5,
+        "name": "Daniel",
+        "type": "Dog",
+        "sex": "Male",
+        "age": 0.3,
+        "breed": "Cross Breed",
+        "characteristics": [],
+        "img": "../pics/Dogs/D2.jpg"
+    },
+    {
+        "petID": 6,
+        "name": "Shein",
+        "type": "Dog",
+        "sex": "Female",
+        "age": 1,
+        "breed": "Aspin",
+        "characteristics": [],
+        "img": "../pics/Dogs/D3.jpg"
+    }
+]
