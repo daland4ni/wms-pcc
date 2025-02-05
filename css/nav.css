@@ -66,6 +66,7 @@ a {
 }
 
 main {
-    margin-top: 70px; /* Prevent content overlap with navbar */
-    padding: 20px;
+    margin-top: 70px;
+    padding-top: 50px;
 }
+
