@@ -14,7 +14,7 @@
     <nav class="nav">
         <div class="nav-left">
             <a href="#home">
-                <img src="../pics/logo.png" alt="Pet Connecct Caloocan Logo">
+                <img src="../pics/logo.png" alt="Pet Connect Caloocan Logo">
             </a>
             <a href="#home">Pet Connect - Caloocan</a>
         </div>

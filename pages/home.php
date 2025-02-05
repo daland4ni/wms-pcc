@@ -85,27 +85,29 @@
     </div>
 
 <!---------------------------------------------------------->
-    <div class="container-4">
-        <h1>Testimonials</h1>
+<div class="container-4">
+    <h2>Testimonials</h2>
 
-        <div>
-            <img src="../pics/PetnMe/testimony1.jpg">
-            <p>"dajkdabahb"</p>
+    <div class="test-container">
+        <div class="testimonial-box">
+            <img src="../pics/PetnMe/testimony1.jpg" alt="Testimonial 1">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue ut ligula venenatis ullamcorper. In sapie sapien neque, fringilla sit amet gravida ac, semper a odio"</p>
         </div>
 
-        <div>
-            <img src="../pics/PetnMe/testimony2.jpg">
-            <p>"dajkdabahb"</p>
+        <div class="testimonial-box">
+            <img src="../pics/PetnMe/testimony2.jpg" alt="Testimonial 2">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue ut ligula venenatis ullamcorper. In sapie sapien neque, fringilla sit amet gravida ac, semper a odio"</p>
         </div>
 
-        <div>
-            <img src="../pics/PetnMe/testimony3.jpg">
-            <p>"dajkdabahb"</p>
+        <div class="testimonial-box">
+            <img src="../pics/PetnMe/testimony5.jpg" alt="Testimonial 3">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue ut ligula venenatis ullamcorper. In sapie sapien neque, fringilla sit amet gravida ac, semper a odio"</p>
         </div>
-
-        <h1>Adopt Now!</h1>
-
     </div>
+
+    <h1 class="adopt-heading">Adopt Now!</h1>
+</div>
+
     
 </body>
 </html>

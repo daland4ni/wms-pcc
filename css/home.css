@@ -202,52 +202,78 @@
 
 
 /* Testimonials container */
+/* Container Styling */
 .container-4 {
-    background-color: #EAD8E6; /* Light purple background */
-    padding: 10px; /* Padding inside the container */
-    border-radius: 10px; /* Rounded corners */
-    text-align: center; /* Center-align text */
-}
-
-/* Heading styling */
-.container-4 h1 {
-    font-size: 96px; /* Large font size for headings */
-    color: #3C5190; /* Blue color for headings */
-    margin-bottom: 20px; /* Space below the heading */
-    font-weight: bold;
+    text-align: center;
+    background-color: #d6c1d6; /* Light purple */
+    padding: 10px 20px;
+    border-radius: 10px;
     font-family: Poppins;
 }
 
-/* Testimonial items */
-.container-4 div {
-    display: inline-block; /* Display divs inline */
-    margin: 15px; /* Add spacing between items */
-    width: 200px; /* Fixed width for each testimonial */
-    text-align: center; /* Center-align each testimonial's content */
+/* Heading Styling */
+.container-4 h2 {
+    font-size: 40px;
+    color: #3C5190; /* Blue text */
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-/* Testimonial images */
-.container-4 img {
-    width: 200px; /* Fixed image size */
-    height: 200px; /* Fixed image size */
-    border-radius: 50%; /* Circular images */
-    border: 2px solid #3C5190; /* Add a border around images */
-    margin-bottom: 10px; /* Space below the image */
+/* Testimonial Layout */
+.test-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Makes it responsive */
+    gap: 20px;
 }
 
-/* Testimonial text */
-.container-4 p {
-    font-size: 14px; /* Small font size for quotes */
-    color: #4F4F4F; /* Neutral dark gray color */
-    font-style: italic; /* Italicize text for quotes */
-    margin-top: 0;
-    line-height: 1.6; /* Improve readability */
+/* Individual Testimonial Box */
+.testimonial-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px; /* Adjust width as needed */
+    text-align: center;
 }
+
+/* Image Styling */
+.testimonial-box img {
+    width: 150px; /* Adjust image size */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Text Styling */
+.testimonial-box p {
+    font-style: italic;
+    color: #26488c;
+    font-size: 14px;
+    font-family: "Arial", sans-serif;
+    max-width: 200px;
+    max-width: 250px;
+    text-align: left;
+}
+
+/* Adopt Now Heading */
+.adopt-heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: #26488c;
+    margin-top: 30px;
+}
+
+
 
 /* "Adopt Now!" heading */
 .container-4 h1:last-of-type {
     margin-top: 30px; /* Space above the "Adopt Now!" heading */
     color: #3C5190; /* Same blue as other headings */
-    font-size: 50px;
+    font-size: 60px;
 }
 
