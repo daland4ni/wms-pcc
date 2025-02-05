@@ -88,7 +88,7 @@ $matchingPets = array_filter($petsData, function ($pet) use ($petType, $petAge, 
                     <p><strong>Breed:</strong> <?= htmlspecialchars($pet['breed']) ?></p>
                     <p><strong>Age:</strong> <?= $finalAge ?></p>
                     <p><?= htmlspecialchars($pet['description']) ?></p>
-                    <a href="adopt.php"><button>Adopt <?= $pet['name']; ?></button></a>
+                    <a href="adopt.php?petID=<?=$pet['petID'];?>"><button>Adopt <?= $pet['name']; ?></button></a>
                 </div>
             <?php endforeach; ?>
         <?php else: ?>

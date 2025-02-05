@@ -14,12 +14,12 @@
 
     <?php include "nav.php"; ?>
 
-    <dclass="form-container">
+    <div class="form-container">
 
 
         <?php
 
-        $petID = $_POST['petID'] ?? false;
+        $petID = $_GET['petID'] ?? false;
 
         ?>
 
@@ -27,8 +27,7 @@
             <div class="selected-pet">
                 <img style="width: 30%;" src="../pics/unkown.jpg" alt="unknown icon" />
                 <h3>No selected pet as of now</h3>
-                <a href="petProf.php"><button style="margin-bottom:10px;" class="submit-btn">Check our Pet
-                        Profiles</button></a><br />
+                <a href="petProf.php"><button style="margin-bottom:10px;" class="submit-btn">Check our Pet Profiles</button></a><br />
                 <a href="matching.php"><button style="margin-bottom:20px;" class="submit-btn">Match-A-Pet</button></a>
             </div>
         <?php else:
@@ -122,7 +121,7 @@
             </div>
             <button type="submit" class="submit-btn">Submit</button>
         </form>
-        </div>
+        </d>
 </body>
 
 </html>
