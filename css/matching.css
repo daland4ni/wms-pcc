@@ -6,6 +6,11 @@ body {
     height: 100vh;
 }
 
+.moolah {
+    background-color: #D1BDC7;
+    font-family: Poppins;
+}
+
 .container {
     background: white;
     padding: 20px;

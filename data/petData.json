@@ -6,7 +6,7 @@
         "sex": "Male",
         "age": 1,
         "breed": "Tabby",
-        "characteristics": [],
+        "characteristics": ["Playful", "Affectionate"],
         "img": "../pics/Cats/C1.jpg",
         "description": "loving, playful, and litter-trained cat looking for a forever home!"
     },
@@ -17,7 +17,7 @@
         "sex": "Male",
         "age": 2,
         "breed": "Ginger Tabby",
-        "characteristics": [],
+        "characteristics": ["Calm", "Affectionate"],
         "img": "../pics/Cats/C2.jpg",
         "description": "friendly, affectionate, and well-behaved cat ready to find a loving home!"
     },
@@ -28,7 +28,7 @@
         "sex": "Male",
         "age": 0.3,
         "breed": "Cross Breed",
-        "characteristics": [],
+        "characteristics": ["Energetic", "Playful"],
         "img": "../pics/Dogs/D1.jpg",
         "description": "Loyal, loving, and full of energy—looking for a forever home!"
     },
@@ -39,7 +39,7 @@
         "sex": "Female",
         "age": 3,
         "breed": "Cross Breed",
-        "characteristics": [],
+        "characteristics": ["Calm", "Playful"],
         "img": "../pics/Cats/C3.jpg",
         "description": "sweet and playful cat looking for a loving home!"
     },
@@ -50,7 +50,7 @@
         "sex": "Male",
         "age": 0.3,
         "breed": "Cross Breed",
-        "characteristics": [],
+        "characteristics": ["Playful", "Affectionate"],
         "img": "../pics/Dogs/D2.jpg",
         "description": "A friendly and affectionate dog ready to be your best friend!"
     },
@@ -61,7 +61,7 @@
         "sex": "Female",
         "age": 1,
         "breed": "Aspin",
-        "characteristics": [],
+        "characteristics": ["Energetic", "Playful"],
         "img": "../pics/Dogs/D3.jpg",
         "description": "Playful, smart, and eager to please—adopt this wonderful pup!"
     },
@@ -72,7 +72,7 @@
         "sex": "Male",
         "age": 1,
         "breed": "Ginger Tabby",
-        "characteristics": [],
+        "characteristics": ["Affectionate", "Playful"],
         "img": "../pics/Cats/C4.jpg",
         "description": "Affectionate, curious, and ready to be your new best friend!"
     },
@@ -83,7 +83,7 @@
         "sex": "Male",
         "age": 0.7,
         "breed": "Shih Tzu",
-        "characteristics": [],
+        "characteristics": ["Calm", "Affectionate"],
         "img": "../pics/Dogs/D4.png",
         "description": "Always up for an adventure or a cozy nap by your side!"
     },
@@ -94,7 +94,7 @@
         "sex": "Male",
         "age": 0.5,
         "breed": "Canaan",
-        "characteristics": [],
+        "characteristics": ["Playful", "Energetic"],
         "img": "../pics/Dogs/D5.png",
         "description": "Loves belly rubs, treats, and making new friends!"
     },
@@ -105,7 +105,7 @@
         "sex": "Female",
         "age": 2,
         "breed": "Siamese",
-        "characteristics": [],
+        "characteristics": ["Calm", "Affectionate"],
         "img": "../pics/Cats/C5.jpg",
         "description": "Independent yet cuddly—this cat is the perfect companion!"
     },

@@ -23,7 +23,7 @@
             <h3 class="subt">Find your furry pet today</h3>
 
             <a href="petProf.php"><button class="bt1">Explore Pets</button></a>
-            <a href="adopt.php"></a><button class="bt2">Start Adopting</button></a>
+            <a href="adopt.php"><button class="bt2">Start Adopting</button></a>
         </div>
     </div>
 <!-------------------------------------------------------------------->

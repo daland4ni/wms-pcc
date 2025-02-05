@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/matching.css">
     <link rel="stylesheet" href="../css/adopt.css">
     <link rel="stylesheet" href="../css/form-elements.css">
-    <link rel="icon" href="../pics/logo.png" type="image/x-icon"
+    <link rel="icon" href="../pics/logo.png" type="image/x-icon">
 </head>
 
 <body class="moolah">
@@ -16,7 +16,7 @@
     <?php include "nav.php"; ?>
 
     <div class="container">
-    <form id="petForm" action="submit.php" method="POST">
+    <form id="petForm" action="matches.php" method="POST">
             <div class="question active">
                 <label>What do you want, a cat or a dog?</label><br>
                 <select name="petType" required>
