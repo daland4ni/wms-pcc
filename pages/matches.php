@@ -63,7 +63,12 @@ $matchingPets = array_filter($petsData, function ($pet) use ($petType, $petAge, 
 
     <?php include "nav.php"; ?>
 
-    <h1>Matching Pets</h1>
+    <?php if (!empty($matchingPets)): ?>
+        <?php $matchesCount = count($matchingPets);  ?>
+        <h1>We found <?= (string)$matchesCount ?> matching pets!</h1>
+    <?php else : ?>
+        <h1>We found no pets :(</h1>
+    <?php endif; ?>
     <div class="gallery">
         <?php if (!empty($matchingPets)): ?>
             <?php foreach ($matchingPets as $pet):

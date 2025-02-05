@@ -61,7 +61,7 @@
               Sex: <?= $pet->sex; ?><br>
               Breed: <?= $pet->breed; ?><br><br>
               <?= $pet->name; ?> is <?= $pet->description; ?><br><br>
-              <a href="adopt.php"><button>Adopt <?= $pet->name; ?></button></a>
+                <a href="adopt.php"><button>Adopt <?= $pet->name; ?></button></a>
             </p>
             <a href="#" class="close">✖</a>
           </div>

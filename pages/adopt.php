@@ -7,14 +7,47 @@
     <title>Adoption Form</title>
     <link rel="stylesheet" href="../css/adopt.css">
     <link rel="stylesheet" href="../css/form-elements.css">
-    <link rel="icon" href="../pics/logo.png" type="image/x-icon"
+    <link rel="icon" href="../pics/logo.png" type="image/x-icon">
 </head>
 
 <body class="moolah">
 
     <?php include "nav.php"; ?>
 
-    <div class="form-container">
+    <dclass="form-container">
+
+
+        <?php
+
+        $petID = $_POST['petID'] ?? false;
+
+        ?>
+
+        <?php if (!$petID): ?>
+            <div class="selected-pet">
+                <img style="width: 30%;" src="../pics/unkown.jpg" alt="unknown icon" />
+                <h3>No selected pet as of now</h3>
+                <a href="petProf.php"><button style="margin-bottom:10px;" class="submit-btn">Check our Pet
+                        Profiles</button></a><br />
+                <a href="matching.php"><button style="margin-bottom:20px;" class="submit-btn">Match-A-Pet</button></a>
+            </div>
+        <?php else:
+            include 'petData.php';
+            $petFound;
+            foreach ($petData as $pet) {
+                if ($pet->petID == intval($petID))
+                    $petFound = $pet;
+            }
+            ?>
+
+            <div class="selected-pet">
+                <img style="width: 30%;" src="<?=$petFound->img ?>" alt="pet pic" />
+                <h3>Adopting <?=$petFound->name ?></h3>
+            </div>
+
+        <?php endif; ?>
+
+        <hr /><br>
         <h2>Pet Adoption Form</h2>
         <form>
             <div class="form-group">
@@ -70,9 +103,12 @@
                 <p>How does your work setup affect your pet fostering?</p>
                 <div class="radio-container-col">
                     <label><input type="radio" name="worksetup" value="1">Work from Home but can attend to pet</label>
-                    <label><input type="radio" name="worksetup" value="2">Work from Home but someone else can attend to pet</label>
-                    <label><input type="radio" name="worksetup" value="3">On-site work but someone else can attend to pet</label>
-                    <label><input type="radio" name="worksetup" value="4">On-site work with no one else to attend to pet</label>
+                    <label><input type="radio" name="worksetup" value="2">Work from Home but someone else can attend to
+                        pet</label>
+                    <label><input type="radio" name="worksetup" value="3">On-site work but someone else can attend to
+                        pet</label>
+                    <label><input type="radio" name="worksetup" value="4">On-site work with no one else to attend to
+                        pet</label>
                     <label><input type="radio" name="worksetup" value="5">Unemployed</label>
                 </div>
             </div>
@@ -86,7 +122,7 @@
             </div>
             <button type="submit" class="submit-btn">Submit</button>
         </form>
-    </div>
+        </div>
 </body>
 
 </html>
