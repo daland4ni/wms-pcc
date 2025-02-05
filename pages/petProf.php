@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Gallery</title>
+  <title>Pet-Connect Gallery</title>
+  <link rel="icon" href="../pics/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="../css/petProf.css">
 </head>
 
@@ -14,9 +15,9 @@
 
   <div class="content">
     <div class="gallery-name">
-      <p>Pet Profiles</p>
+      <p>Gallery</p>
     </div>
-    
+
     <?php
 
     include "petData.php";
@@ -25,35 +26,49 @@
 
     <div class="gallery">
 
-      <?php foreach ($petData as $pet) : 
+      <?php foreach ($petData as $pet):
         $finalAge;
         if ($pet->age < 1) {
           $finalAge = $pet->age * 10;
-          $finalAge = (string)$finalAge . " months old";
+          $finalAge = (string) $finalAge . " months old";
         } else {
           $finalAge = $pet->age;
-          $finalAge = (string)$finalAge . " years old";
+          $finalAge = (string) $finalAge . " years old";
         } ?>
 
-      <div class="gallery-item">
-        <a href="<?='#popup' . (string)$pet->petID;?>"><img src="<?=$pet->img; ?>"></a>
-        <div class="caption"><b><?=$pet->name; ?></b>, <?=$finalAge;?>, <?=$pet->sex; ?>, <?=$pet->breed; ?></div>
-      </div>
+        <div class="gallery-item">
+          <a href="<?= '#popup' . (string) $pet->petID; ?>"><img src="<?= $pet->img; ?>"></a>
+          <div class="caption"><b><?= $pet->name; ?></b></div>
+        </div>
 
       <?php endforeach; ?>
 
-      <?php foreach ($petData as $pet) : ?>
-      <div id="<?='popup' . (string)$pet->petID;?>" class="popup">
-        <div class="popup-content">
-            <img src="<?=$pet->img;?>" alt="<?='Pet' . (string)$pet->petID;?>">
-            <p><?=$pet->description;?></p>
-            <a href="#" class="close">Close</a>
+      <?php foreach ($petData as $pet):
+        $finalAge;
+        if ($pet->age < 1) {
+          $finalAge = $pet->age * 10;
+          $finalAge = (string) $finalAge . " months old";
+        } else {
+          $finalAge = $pet->age;
+          $finalAge = (string) $finalAge . " years old";
+        } ?>
+        <div id="<?= 'popup' . (string) $pet->petID; ?>" class="popup">
+          <div class="popup-content">
+            <img src="<?= $pet->img; ?>" alt="<?= 'Pet' . (string) $pet->petID; ?>">
+            <p class="popup-text">
+              <b style="font-size: 30px; color: #486989"><?= $pet->name; ?></b><br>
+              Age: <?= $finalAge; ?><br>
+              Sex: <?= $pet->sex; ?><br>
+              Breed: <?= $pet->breed; ?><br><br>
+              <?= $pet->name; ?> is <?= $pet->description; ?><br><br>
+              <a href="adopt.php"><button>Adopt <?= $pet->name; ?></button></a>
+            </p>
+            <a href="#" class="close">✖</a>
+          </div>
         </div>
-      </div>
       <?php endforeach; ?>
     </div>
   </div>
-
   </div>
 </body>
 
