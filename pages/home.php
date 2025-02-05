@@ -11,6 +11,7 @@
 </head>
 <body class="bgc">
     <?php include "nav.php"; ?>
+    
 <!------------------------------------------------------------------>
     <div class="container-1">
         <div class="left">
@@ -91,23 +92,23 @@
     <div class="test-container">
         <div class="testimonial-box">
             <img src="../pics/PetnMe/testimony1.jpg" alt="Testimonial 1">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue ut ligula venenatis ullamcorper. In sapie sapien neque, fringilla sit amet gravida ac, semper a odio"</p>
+            <p>"Bringing Sonny O. home was life-changing! He went from a shelter kitten to the heart of our family. The adoption process was easy, and the team truly cares about every pet finding the perfect home. We couldn’t be happier!" <br>– Tricia 🐶❤️</p>
         </div>
 
         <div class="testimonial-box">
             <img src="../pics/PetnMe/testimony2.jpg" alt="Testimonial 2">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue ut ligula venenatis ullamcorper. In sapie sapien neque, fringilla sit amet gravida ac, semper a odio"</p>
+            <p>"I found my best friend through Pet Connect - Caloocan, and it was the most rewarding experience. From the first meet-and-greet to adoption day, the support was amazing. Kuting has filled our home with love and laughter!" <br>– Dani 🐾🏡</p>
         </div>
 
         <div class="testimonial-box">
             <img src="../pics/PetnMe/testimony5.jpg" alt="Testimonial 3">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue ut ligula venenatis ullamcorper. In sapie sapien neque, fringilla sit amet gravida ac, semper a odio"</p>
+            <p>"Adopting Nuggets was the best decision ever! He’s not just a pet—he’s family. The team made the whole process stress-free and guided us every step of the way. We can’t thank them enough!" <br>– Jus 🐱💙</p>
         </div>
     </div>
 
     <h1 class="adopt-heading">Adopt Now!</h1>
+    <?php include "footer.php"; ?>
 </div>
 
-    
 </body>
 </html>
