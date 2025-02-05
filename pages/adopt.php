@@ -24,19 +24,19 @@
                     <label><input type="radio" name="honorific" value="other">Mx.</label>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-group-1">
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="fname" placeholder="Enter your first name">
             </div>
-            <div class="form-group">
+            <div class="form-group-1">
                 <label for="lname">Last Name</label>
                 <input type="text" id="lname" name="lname" placeholder="Enter your last name">
             </div>
-            <div class="form-group">
+            <div class="form-group-1">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email">
             </div>
-            <div class="form-group">
+            <div class="form-group-1">
                 <label for="phonenum">Phone Number</label>
                 <input type="text" id="phonenum" name="phonenum" placeholder="Enter your mobile number">
             </div>
