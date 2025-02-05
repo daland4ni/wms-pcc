@@ -16,7 +16,7 @@
             <a href="#home">
                 <img src="../pics/logo.png" alt="Pet Connect Caloocan Logo">
             </a>
-            <a href="#home">Pet Connect - Caloocan</a>
+            <a href="home.php">Pet Connect - Caloocan</a>
         </div>
         <div class="nav-right">
             <a href="home.php">Home</a> <!-- justine -->
