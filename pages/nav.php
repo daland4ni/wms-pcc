@@ -23,7 +23,7 @@
             <a href="petProf.php">Pet Profiles</a> <!-- adelaine -->
             <a href="#match">Match-A-Pet</a> <!-- aeron -->
             <a href="adopt.php">Adopt Now!</a> <!-- aeron -->
-            <a href="#shelter">Available Shelters</a> <!-- rence -->
+            <a href="#shelter">Meet the Rehomers</a> <!-- rence -->
         </div>
     </nav>
     <main>

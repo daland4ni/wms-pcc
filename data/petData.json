@@ -8,7 +8,7 @@
         "breed": "Tabby",
         "characteristics": [],
         "img": "../pics/Cats/C1.jpg",
-        "description": "Sample test description"
+        "description": "loving, playful, and litter-trained cat looking for a forever home!"
     },
     {
         "petID": 2,
@@ -19,7 +19,7 @@
         "breed": "Ginger Tabby",
         "characteristics": [],
         "img": "../pics/Cats/C2.jpg",
-        "description": "Sample test description"
+        "description": "friendly, affectionate, and well-behaved cat ready to find a loving home!"
     },
     {
         "petID": 3,
@@ -30,7 +30,7 @@
         "breed": "Cross Breed",
         "characteristics": [],
         "img": "../pics/Dogs/D1.jpg",
-        "description": "Sample test description"
+        "description": "Loyal, loving, and full of energy—looking for a forever home!"
     },
     {
         "petID": 4,
@@ -41,7 +41,7 @@
         "breed": "Cross Breed",
         "characteristics": [],
         "img": "../pics/Cats/C3.jpg",
-        "description": "Sample test description"
+        "description": "sweet and playful cat looking for a loving home!"
     },
     {
         "petID": 5,
@@ -52,7 +52,7 @@
         "breed": "Cross Breed",
         "characteristics": [],
         "img": "../pics/Dogs/D2.jpg",
-        "description": "Sample test description"
+        "description": "A friendly and affectionate dog ready to be your best friend!"
     },
     {
         "petID": 6,
@@ -63,7 +63,7 @@
         "breed": "Aspin",
         "characteristics": [],
         "img": "../pics/Dogs/D3.jpg",
-        "description": "Sample test description"
+        "description": "Playful, smart, and eager to please—adopt this wonderful pup!"
     },
     {
         "petID": 7,
@@ -74,7 +74,7 @@
         "breed": "Ginger Tabby",
         "characteristics": [],
         "img": "../pics/Cats/C4.jpg",
-        "description": "Sample test description"
+        "description": "Affectionate, curious, and ready to be your new best friend!"
     },
     {
         "petID": 8,
@@ -85,7 +85,7 @@
         "breed": "Shih Tzu",
         "characteristics": [],
         "img": "../pics/Dogs/D4.png",
-        "description": "Sample test description"
+        "description": "Always up for an adventure or a cozy nap by your side!"
     },
     {
         "petID": 9,
@@ -96,7 +96,7 @@
         "breed": "Canaan",
         "characteristics": [],
         "img": "../pics/Dogs/D5.png",
-        "description": "Sample test description"
+        "description": "Loves belly rubs, treats, and making new friends!"
     },
     {
         "petID": 10,
@@ -107,7 +107,7 @@
         "breed": "Siamese",
         "characteristics": [],
         "img": "../pics/Cats/C5.jpg",
-        "description": "Sample test description"
+        "description": "Independent yet cuddly—this cat is the perfect companion!"
     },
     {
         "petID": 11,
@@ -118,7 +118,7 @@
         "breed": "Aspin",
         "characteristics": [],
         "img": "../pics/Dogs/D6.png",
-        "description": "Sample test description"
+        "description": "This dog will bring endless joy and companionship to your home!"
     },
     {
         "petID": 12,
@@ -129,7 +129,7 @@
         "breed": "Cross Breed",
         "characteristics": [],
         "img": "../pics/Cats/Csquare.png",
-        "description": "Sample test description"
+        "description": "Litter-trained, gentle, and full of personality!"
     },
     {
         "petID": 13,
@@ -140,7 +140,7 @@
         "breed": "Cross Breed",
         "characteristics": [],
         "img": "../pics/Cats/C7.png",
-        "description": "Sample test description"
+        "description": "Loves to nap, play, and purr—ready for a forever home!"
     },
     {
         "petID": 14,
@@ -151,7 +151,7 @@
         "breed": "Aspin",
         "characteristics": [],
         "img": "../pics/Dogs/D7.png",
-        "description": "Sample test description"
+        "description": "Well-mannered, affectionate, and full of tail wags!"
     },
     {
         "petID": 15,
@@ -162,7 +162,7 @@
         "breed": "Cross Breed",
         "characteristics": [],
         "img": "../pics/Dogs/D8.png",
-        "description": "Sample test description"
+        "description": "playful and energetic pup looking for a loving family!"
     },
     {
         "petID": 16,
@@ -173,7 +173,7 @@
         "breed": "Cross Breed",
         "characteristics": [],
         "img": "../pics/Cats/C8.png",
-        "description": "Sample test description"
+        "description": "charming and loving cat who enjoys both cuddles and adventures!"
     },
     {
         "petID": 17,
@@ -184,7 +184,7 @@
         "breed": "Jack Russel",
         "characteristics": [],
         "img": "../pics/Dogs/D9.png",
-        "description": "Sample test description"
+        "description": "Sweet, gentle, and great with kids—your perfect family dog!"
     },
     {
         "petID": 18,
@@ -195,7 +195,7 @@
         "breed": "British Shorthair",
         "characteristics": [],
         "img": "../pics/Cats/C9.png",
-        "description": "Sample test description"
+        "description": "Soft, snuggly, and always ready for playtime!"
     },
     {
         "petID": 19,
@@ -206,7 +206,7 @@
         "breed": "LaPerm",
         "characteristics": [],
         "img": "../pics/Cats/C10.png",
-        "description": "Sample test description"
+        "description": "Low-maintenance but full of love—adopt this wonderful cat today!"
     },
     {
         "petID": 20,
@@ -217,7 +217,7 @@
         "breed": "Aspin",
         "characteristics": [],
         "img": "../pics/Dogs/D10.png",
-        "description": "Sample test description"
+        "description": "Loves fetch, long walks, and snuggles on the couch!"
     },
     {
         "petID": 21,
@@ -228,7 +228,7 @@
         "breed": "Pitbull",
         "characteristics": [],
         "img": "../pics/Dogs/D11.png",
-        "description": "Sample test description"
+        "description": "brave and loyal protector with a heart full of love!"
     },
     {
         "petID": 22,
@@ -239,7 +239,7 @@
         "breed": "Cross Breed",
         "characteristics": [],
         "img": "../pics/Cats/C11.png",
-        "description": "Sample test description"
+        "description": "A graceful and intelligent cat searching for a caring family!"
     },
     {
         "petID": 23,
@@ -250,7 +250,7 @@
         "breed": "Aspin",
         "characteristics": [],
         "img": "../pics/Dogs/D12.png",
-        "description": "Sample test description"
+        "description": "Friendly, house-trained, and always happy to see you!"
     },
     {
         "petID": 24,
@@ -261,7 +261,7 @@
         "breed": "Ginger Tabby",
         "characteristics": [],
         "img": "../pics/Cats/C12.png",
-        "description": "Sample test description"
+        "description": "Loves chin scratches and cozy spots—your perfect lap cat!"
     },
     {
         "petID": 25,
@@ -272,7 +272,7 @@
         "breed": "Cross Breed",
         "characteristics": [],
         "img": "../pics/Cats/C13.png",
-        "description": "Sample test description"
+        "description": "Elegant, friendly, and full of curiosity—ready to join your home!"
     },
     {
         "petID": 26,
@@ -283,7 +283,7 @@
         "breed": "Chinook",
         "characteristics": [],
         "img": "../pics/Dogs/D13.png",
-        "description": "Sample test description"
+        "description": "the one who will shower you with love, kisses, and wagging tails!"
     },
     {
         "petID": 27,
@@ -294,7 +294,7 @@
         "breed": "Dutch Hound",
         "characteristics": [],
         "img": "../pics/Dogs/D14.png",
-        "description": "Sample test description"
+        "description": "gentle and obedient pup ready for a lifetime of love!"
     },
     {
         "petID": 28,
@@ -305,7 +305,7 @@
         "breed": "Bengal Cat",
         "characteristics": [],
         "img": "../pics/Cats/C14square.png",
-        "description": "Sample test description"
+        "description": "little shy at first but warms up into the sweetest companion!"
     },
     {
         "petID": 29,
@@ -316,7 +316,7 @@
         "breed": "Poodle",
         "characteristics": [],
         "img": "../pics/Dogs/D15.png",
-        "description": "Sample test description"
+        "description": "Loyal and affectionate—a perfect companion for any home!"
     },
     {
         "petID": 30,
@@ -327,7 +327,7 @@
         "breed": "Cross Breed",
         "characteristics": [],
         "img": "../pics/Cats/C15.png",
-        "description": "Sample test description"
+        "description": "Loyal, independent, and endlessly entertaining!"
     },
     {
         "petID": 31,
@@ -338,7 +338,7 @@
         "breed": "Tabby",
         "characteristics": [],
         "img": "../pics/Cats/C16.png",
-        "description": "Sample test description"
+        "description": "a cat that will fill your home with love, warmth, and purrs!"
     },
     {
         "petID": 32,
@@ -349,7 +349,7 @@
         "breed": "Chihuahua",
         "characteristics": [],
         "img": "../pics/Dogs/D16.png",
-        "description": "Sample test description"
+        "description": "is a dog who loves playing outside and relaxing with the family!"
     },
     {
         "petID": 33,
@@ -360,7 +360,7 @@
         "breed": "Jack Russel",
         "characteristics": [],
         "img": "../pics/Dogs/D17.png",
-        "description": "Sample test description"
+        "description": "a smart and loving dog eager to learn and bond with you!"
     },
     {
         "petID": 34,
@@ -371,7 +371,7 @@
         "breed": "Ginger Tabby",
         "characteristics": [],
         "img": "../pics/Cats/C17.png",
-        "description": "Sample test description"
+        "description": "a cat who loves playtime, sunny naps, and being part of the family!"
     },
     {
         "petID": 35,
@@ -382,7 +382,7 @@
         "breed": "Golden Retriever",
         "characteristics": [],
         "img": "../pics/Dogs/D18.png",
-        "description": "Sample test description"
+        "description": "happy, social, and always ready for a new adventure!"
     },
     {
         "petID": 36,
@@ -393,7 +393,7 @@
         "breed": "Tabby",
         "characteristics": [],
         "img": "../pics/Cats/C18.png",
-        "description": "Sample test description"
+        "description": "gentle and quiet companion looking for a peaceful home!"
     },
     {
         "petID": 37,
@@ -404,7 +404,7 @@
         "breed": "Cross Breed",
         "characteristics": [],
         "img": "../pics/Cats/C19.png",
-        "description": "Sample test description"
+        "description": "silly, fun, and full of mischief—this cat will keep you smiling!"
     },
     {
         "petID": 38,
@@ -415,7 +415,7 @@
         "breed": "Shih Tzu",
         "characteristics": [],
         "img": "../pics/Dogs/D19.png",
-        "description": "Sample test description"
+        "description": "full of personality and looking for a best friend!"
     },
     {
         "petID": 39,
@@ -426,7 +426,7 @@
         "breed": "aspin",
         "characteristics": [],
         "img": "../pics/Dogs/D20.png",
-        "description": "Sample test description"
+        "description": "ready to bring joy and love into your life!"
     },
     {
         "petID": 40,
@@ -437,6 +437,6 @@
         "breed": "Cross Breed",
         "characteristics": [],
         "img": "../pics/Cats/C20.png",
-        "description": "Sample test description"
+        "description": "charming and affectionate cat ready to bring joy into your life!"
     }
 ]
