@@ -17,8 +17,11 @@
     </div> -->
     <div class="rehomers-description">
       <p><b style="color: #3C5190; font-size: 5vh">Rehomers</b> are former pet owners who can no longer care for their pets and take responsibility for finding them a
-        new, loving home. Instead of surrendering them to a shelter, they ensure a smooth transition to a caring family.
+        new, loving home. Instead of surrendering them to a shelter, they choose <b style="color: #3C5190;">Pet Connect - Caloocan</b> to ensure a smooth transition to a caring family.
       </p>
+      <button>Become a Rehomer</button>
+      <hr>
+      <h1 style="text-align: center">Gallery</h1>
     </div>
     <div class="gallery">
       <div class="gallery-item">
