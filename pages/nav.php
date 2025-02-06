@@ -32,6 +32,7 @@ session_start();
             <a href="fosters.php">Meet the Rehomers</a> <!-- rence -->
             <?php if (isset($_SESSION["username"])) : ?>
                 <a href="profile.php">Profile</a>
+                <a href="logout.php">Logout</a>
             <?php else : ?>
                 <a href="login.php">Rehomers' Portal</a>
             <?php endif; ?>
