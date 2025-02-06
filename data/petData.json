@@ -116,7 +116,7 @@
         "sex": "Male",
         "age": 4,
         "breed": "Aspin",
-        "characteristics": [],
+        "characteristics": ["Playful", "Affectionate"],
         "img": "../pics/Dogs/D6.png",
         "description": "This dog will bring endless joy and companionship to your home!"
     },
@@ -127,7 +127,7 @@
         "sex": "Male",
         "age": 4,
         "breed": "Cross Breed",
-        "characteristics": [],
+        "characteristics": ["Calm","Energetic"],
         "img": "../pics/Cats/Csquare.png",
         "description": "Litter-trained, gentle, and full of personality!"
     },
@@ -138,7 +138,7 @@
         "sex": "Male",
         "age": 0.8,
         "breed": "Cross Breed",
-        "characteristics": [],
+        "characteristics": ["Playful","Energetic"],
         "img": "../pics/Cats/C7.png",
         "description": "Loves to nap, play, and purr—ready for a forever home!"
     },
@@ -149,7 +149,7 @@
         "sex": "Female",
         "age": 1,
         "breed": "Aspin",
-        "characteristics": [],
+        "characteristics": ["Affectionate", "Calm"],
         "img": "../pics/Dogs/D7.png",
         "description": "Well-mannered, affectionate, and full of tail wags!"
     },
@@ -160,7 +160,7 @@
         "sex": "Male",
         "age": 2,
         "breed": "Cross Breed",
-        "characteristics": [],
+        "characteristics": ["Energetic", "Playful"],
         "img": "../pics/Dogs/D8.png",
         "description": "playful and energetic pup looking for a loving family!"
     },
@@ -171,7 +171,7 @@
         "sex": "Female",
         "age": 3,
         "breed": "Cross Breed",
-        "characteristics": [],
+        "characteristics": ["Playful", "Calm"],
         "img": "../pics/Cats/C8.png",
         "description": "charming and loving cat who enjoys both cuddles and adventures!"
     },
@@ -182,7 +182,7 @@
         "sex": "Female",
         "age": 0.3,
         "breed": "Jack Russel",
-        "characteristics": [],
+        "characteristics": ["Affectionate","Calm"],
         "img": "../pics/Dogs/D9.png",
         "description": "Sweet, gentle, and great with kids—your perfect family dog!"
     },
@@ -193,7 +193,7 @@
         "sex": "Female",
         "age": 0.2,
         "breed": "British Shorthair",
-        "characteristics": [],
+        "characteristics": ["Affectionate","Energetic"],
         "img": "../pics/Cats/C9.png",
         "description": "Soft, snuggly, and always ready for playtime!"
     },
@@ -204,7 +204,7 @@
         "sex": "Male",
         "age": 0.3,
         "breed": "LaPerm",
-        "characteristics": [],
+        "characteristics": ["Calm","Energetic"],
         "img": "../pics/Cats/C10.png",
         "description": "Low-maintenance but full of love—adopt this wonderful cat today!"
     },
@@ -215,7 +215,7 @@
         "sex": "Male",
         "age": 3,
         "breed": "Aspin",
-        "characteristics": [],
+        "characteristics": ["Playful","Calm"],
         "img": "../pics/Dogs/D10.png",
         "description": "Loves fetch, long walks, and snuggles on the couch!"
     },
@@ -226,7 +226,7 @@
         "sex": "Male",
         "age": 2,
         "breed": "Pitbull",
-        "characteristics": [],
+        "characteristics": ["Energetic", "Affectionate"],
         "img": "../pics/Dogs/D11.png",
         "description": "brave and loyal protector with a heart full of love!"
     },
@@ -237,7 +237,7 @@
         "sex": "Male",
         "age": 3,
         "breed": "Cross Breed",
-        "characteristics": [],
+        "characteristics": ["Affectionate", "Playful"],
         "img": "../pics/Cats/C11.png",
         "description": "A graceful and intelligent cat searching for a caring family!"
     },
@@ -248,7 +248,7 @@
         "sex": "Male",
         "age": 5,
         "breed": "Aspin",
-        "characteristics": [],
+        "characteristics": ["Playful", "Affectionate"],
         "img": "../pics/Dogs/D12.png",
         "description": "Friendly, house-trained, and always happy to see you!"
     },
@@ -259,7 +259,7 @@
         "sex": "Male",
         "age": 4,
         "breed": "Ginger Tabby",
-        "characteristics": [],
+        "characteristics": ["Calm", "Affectionate"],
         "img": "../pics/Cats/C12.png",
         "description": "Loves chin scratches and cozy spots—your perfect lap cat!"
     },
@@ -270,7 +270,7 @@
         "sex": "Male",
         "age": 0.4,
         "breed": "Cross Breed",
-        "characteristics": [],
+        "characteristics": ["Affectionate", "Calm"],
         "img": "../pics/Cats/C13.png",
         "description": "Elegant, friendly, and full of curiosity—ready to join your home!"
     },
@@ -281,7 +281,7 @@
         "sex": "Female",
         "age": 0.4,
         "breed": "Chinook",
-        "characteristics": [],
+        "characteristics": ["Playful", "Calm"],
         "img": "../pics/Dogs/D13.png",
         "description": "the one who will shower you with love, kisses, and wagging tails!"
     },
@@ -292,7 +292,7 @@
         "sex": "Male",
         "age": 3,
         "breed": "Dutch Hound",
-        "characteristics": [],
+        "characteristics": ["Calm", "Energetic"],
         "img": "../pics/Dogs/D14.png",
         "description": "gentle and obedient pup ready for a lifetime of love!"
     },
@@ -303,7 +303,7 @@
         "sex": "Female",
         "age": 4,
         "breed": "Bengal Cat",
-        "characteristics": [],
+        "characteristics": ["Energetic", "Affectionate"],
         "img": "../pics/Cats/C14square.png",
         "description": "little shy at first but warms up into the sweetest companion!"
     },
@@ -314,7 +314,7 @@
         "sex": "Male",
         "age": 1,
         "breed": "Poodle",
-        "characteristics": [],
+        "characteristics": ["Calm", "Affectionate"],
         "img": "../pics/Dogs/D15.png",
         "description": "Loyal and affectionate—a perfect companion for any home!"
     },
@@ -325,7 +325,7 @@
         "sex": "Male",
         "age": 1,
         "breed": "Cross Breed",
-        "characteristics": [],
+        "characteristics": ["Playful", "Affectionate"],
         "img": "../pics/Cats/C15.png",
         "description": "Loyal, independent, and endlessly entertaining!"
     },
@@ -336,7 +336,7 @@
         "sex": "Female",
         "age": 0.4,
         "breed": "Tabby",
-        "characteristics": [],
+        "characteristics": ["Calm", "Affectionate"],
         "img": "../pics/Cats/C16.png",
         "description": "a cat that will fill your home with love, warmth, and purrs!"
     },
@@ -347,7 +347,7 @@
         "sex": "Male",
         "age": 4,
         "breed": "Chihuahua",
-        "characteristics": [],
+        "characteristics": ["Affectionate", "Calm"],
         "img": "../pics/Dogs/D16.png",
         "description": "is a dog who loves playing outside and relaxing with the family!"
     },
@@ -358,7 +358,7 @@
         "sex": "Female",
         "age": 0.1,
         "breed": "Jack Russel",
-        "characteristics": [],
+        "characteristics": ["Playful", "Affectionate"],
         "img": "../pics/Dogs/D17.png",
         "description": "a smart and loving dog eager to learn and bond with you!"
     },
@@ -369,7 +369,7 @@
         "sex": "Male",
         "age": 0.8,
         "breed": "Ginger Tabby",
-        "characteristics": [],
+        "characteristics": ["Calm", "Playful"],
         "img": "../pics/Cats/C17.png",
         "description": "a cat who loves playtime, sunny naps, and being part of the family!"
     },
@@ -380,7 +380,7 @@
         "sex": "Female",
         "age": 0.3,
         "breed": "Golden Retriever",
-        "characteristics": [],
+        "characteristics": ["Playful", "Energetic"],
         "img": "../pics/Dogs/D18.png",
         "description": "happy, social, and always ready for a new adventure!"
     },
@@ -391,7 +391,7 @@
         "sex": "Male",
         "age": 3,
         "breed": "Tabby",
-        "characteristics": [],
+        "characteristics": ["Affectionate", "Calm"],
         "img": "../pics/Cats/C18.png",
         "description": "gentle and quiet companion looking for a peaceful home!"
     },
@@ -402,7 +402,7 @@
         "sex": "Male",
         "age": 4,
         "breed": "Cross Breed",
-        "characteristics": [],
+        "characteristics": ["Playful", "Energetic"],
         "img": "../pics/Cats/C19.png",
         "description": "silly, fun, and full of mischief—this cat will keep you smiling!"
     },
@@ -413,7 +413,7 @@
         "sex": "Male",
         "age": 1,
         "breed": "Shih Tzu",
-        "characteristics": [],
+        "characteristics": ["Calm", "Affectionate"],
         "img": "../pics/Dogs/D19.png",
         "description": "full of personality and looking for a best friend!"
     },
@@ -424,7 +424,7 @@
         "sex": "Female",
         "age": 2,
         "breed": "aspin",
-        "characteristics": [],
+        "characteristics": ["Playful", "Affectionate"],
         "img": "../pics/Dogs/D20.png",
         "description": "ready to bring joy and love into your life!"
     },
@@ -435,7 +435,7 @@
         "sex": "Male",
         "age": 3,
         "breed": "Cross Breed",
-        "characteristics": [],
+        "characteristics": ["Affectionate", "Energetic"],
         "img": "../pics/Cats/C20.png",
         "description": "charming and affectionate cat ready to bring joy into your life!"
     }

@@ -32,17 +32,13 @@
                 <a href="matching.php"><button style="margin-bottom:20px;" class="submit-btn">Match-A-Pet</button></a>
             </div>
         <?php else:
-            include 'petData.php';
-            $petFound;
-            foreach ($petData as $pet) {
-                if ($pet->petID == intval($petID))
-                    $petFound = $pet;
-            }
+            include '../data/petData.php';
+            $petFound = getPetData($petID);
             ?>
 
             <div class="selected-pet">
-                <img style="display: block; margin-left: auto; margin-right: auto; width: 30%;" src="<?= $petFound->img ?>" alt="pet pic" />
-                <h3 style="text-align: center">Adopting <?= $petFound->name ?></h3>
+                <img style="display: block; margin-left: auto; margin-right: auto; width: 30%;" src="<?= $petFound['img'] ?>" alt="pet pic" />
+                <h3 style="text-align: center">Adopting <?= $petFound['name'] ?></h3>
             </div>
 
         <?php endif; ?>

@@ -3,9 +3,9 @@
 
 <?php
 // Load pet data from JSON file
-include "petData.php";
+include "../data/petData.php";
 
-$petsData = json_decode($petDataRaw, true);
+$petsData = json_decode(getPetsJSON(), true);
 ;
 
 // Get form inputs
@@ -35,7 +35,7 @@ function matchesCriteria($pet, $petType, $petAge, $petBreed, $selectedPersonalit
     if (!empty($selectedPersonalities)) {
         $counter = 0;
         foreach ($selectedPersonalities as $personality) {
-            if (in_array($personality, $pet['characteristics']))
+            if (in_array($personality, explode(';',$pet['characteristics'])))
                 $counter++;
         }
         if ($counter < 1)
