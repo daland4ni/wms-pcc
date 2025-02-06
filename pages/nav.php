@@ -19,7 +19,7 @@ session_start();
 <body>
     <nav class="nav">
         <div class="nav-left">
-            <a href="#home">
+            <a href="home.php">
                 <img src="../pics/logo.png" alt="Pet Connect Caloocan Logo">
                 <img src="../pics/subLogo.png" alt="Pet Connect Caloocan SubLogo">
             </a>
