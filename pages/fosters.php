@@ -4,22 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Gallery</title>
+  <title>Rehomers</title>
   <link rel="stylesheet" href="../css/fos.css">
+  <link rel="icon" href="../pics/logo.png" type="image/x-icon">
 </head>
 
 <body>
-
   <?php include "nav.php"; ?>
-
   <div class="content">
-    <div class="gallery-name">
-      <p>Fosters</p>
+    <!-- <div class="gallery-name">
+      <p>Rehomers</p>
+    </div> -->
+    <div class="rehomers-description">
+      <p><b style="color: #3C5190; font-size: 5vh">Rehomers</b> are former pet owners who can no longer care for their pets and take responsibility for finding them a
+        new, loving home. Instead of surrendering them to a shelter, they ensure a smooth transition to a caring family.
+      </p>
     </div>
     <div class="gallery">
       <div class="gallery-item">
-        <a href="#popup1"><img src="../pics/fosters/balatico.png" alt="Pet 1"></a>
-        
+        <img src="../pics/fosters/balatico.png" alt="Pet 1">
         <div class="caption"><b>Balatico</b> <br> Contact Info:</br> <br>balaticorei@gmail.com </br>
         </div>
       </div>
@@ -136,12 +139,10 @@
         <img src="../pics/fosters/villaruz.png" alt="Pet 4">
         <div class="caption"><b>Villaruz</b><br>Contact Info:</br><br>ranzi@gmail.com</br></div>
       </div>
-
     </div>
-
-    </div>
+    <?php include "footer.php"; ?>
   </div>
-
+  </div>
   </div>
 </body>
 

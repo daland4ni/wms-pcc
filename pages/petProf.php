@@ -15,7 +15,7 @@
 
   <div class="content">
     <div class="gallery-name">
-      <p>Gallery</p>
+      <p style="color: #3C5190; font-size: 7vh; text-align: center; text-shadow: 2px 1px #000; font-weight: 600;" >Our Pets</p>
     </div>
 
     <?php
@@ -61,13 +61,14 @@
               Sex: <?= $pet->sex; ?><br>
               Breed: <?= $pet->breed; ?><br><br>
               <?= $pet->name; ?> is <?= $pet->description; ?><br><br>
-                <a href="adopt.php?petID=<?=$pet->petID;?>"><button>Adopt <?= $pet->name; ?></button></a>
+              <a href="adopt.php?petID=<?= $pet->petID; ?>"><button>Adopt <?= $pet->name; ?></button></a>
             </p>
             <a href="#" class="close">✖</a>
           </div>
         </div>
       <?php endforeach; ?>
     </div>
+    <?php include "footer.php"; ?>
   </div>
   </div>
 </body>

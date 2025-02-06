@@ -15,8 +15,8 @@
         <div class="nav-left">
             <a href="#home">
                 <img src="../pics/logo.png" alt="Pet Connect Caloocan Logo">
+                <img src="../pics/subLogo.png" alt="Pet Connect Caloocan SubLogo">
             </a>
-            <a href="home.php">Pet Connect - Caloocan</a>
         </div>
         <div class="nav-right">
             <a href="home.php">Home</a> <!-- justine -->

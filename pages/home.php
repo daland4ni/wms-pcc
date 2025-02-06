@@ -46,7 +46,7 @@
                 <img src="../pics/Dogs/D2.jpg">
             </div>
 
-            <div data-name="Molly">
+            <div data-name="Mollie">
                 <img src="../pics/Cats/C3.jpg">
             </div>
 
@@ -54,8 +54,8 @@
                 <img src="../pics/Cats/C4.jpg">
             </div>
 
-            <div data-name="Uno">
-                <img src="../pics/Dogs/D3.jpg">
+            <div data-name="Willow">
+                <img src="../pics/willow.jpg">
             </div>
 
             <div data-name="Bubbles">
@@ -75,7 +75,7 @@
             Adoption also contributes to a sense of fulfillment and responsibility, 
             making a positive impact on both your life and the pet's.</p>
 
-            <button href="adopt.php">Adopt Now!</button>
+            <a href="adopt.php"><button style="margin-left: 5vh">Adopt Now!</button></a>
         </div>
         <img src="../pics/catdog.png" alt="Cat and Dog">
 

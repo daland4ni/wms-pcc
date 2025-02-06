@@ -97,6 +97,7 @@ $matchingPets = array_filter($petsData, function ($pet) use ($petType, $petAge, 
     </div>
     <br>
     <a href="matching.php">Go Back</a>
+    <?php include "footer.php"; ?>
 </body>
 
 </html>
