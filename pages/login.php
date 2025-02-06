@@ -30,7 +30,7 @@ $action = $_GET['action'] ?? false;
 
         <?php if ($action === "register"): ?>
             <h2>Become a Rehomer!</h2>
-            <form>
+            <form action="auth.php?action=register" method="POST">
                 <div class="form-group">
                     <div class="radio-container-row">
                         <label><input type="radio" name="honorific" value="male">Mr.</label>
@@ -65,7 +65,7 @@ $action = $_GET['action'] ?? false;
                 <button type="submit" class="submit-btn">Submit</button>
             </form>
         <?php else: ?>
-            <form>
+            <form action="auth.php?action=login" method="POST">
                 <div class="form-group-1">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" placeholder="Enter your Username">
