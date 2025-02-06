@@ -18,14 +18,14 @@
     <div class="container">
     <form id="petForm" action="matches.php" method="POST">
             <div class="question active">
-                <label>What do you want, a cat or a dog?</label><br>
+                <h2>What pet do you prefer?</h2><br>
                 <select name="petType" required>
                     <option value="dog">Dog</option>
                     <option value="cat">Cat</option>
                 </select>
             </div>
             <div class="question">
-                <label>Do you have a desired age for your pet?</label><br>
+                <h2>Do you have a desired age for your pet?</h2><br>
                 <select name="petAge" required>
                     <option value="<1">&lt; 1 year old</option>
                     <option value="1-2">1 - 2 years old</option>
@@ -34,15 +34,18 @@
                 </select>
             </div>
             <div class="question">
-                <label>How about your pet's breed?</label><br>
+                <h2>How about your pet's breed?</h2><br>
                 <input type="text" name="petBreed">
+                
             </div>
             <div class="question">
-                <label>Select the personalities you wish to see in your pet.</label><br>
-                <input type="checkbox" name="personality[]" value="Playful"> Playful<br>
-                <input type="checkbox" name="personality[]" value="Calm"> Calm<br>
-                <input type="checkbox" name="personality[]" value="Energetic"> Energetic<br>
-                <input type="checkbox" name="personality[]" value="Affectionate"> Affectionate<br>
+                <div class="chk-box">
+                    <h2>Select the personalities you wish to see in your pet.</h2><br>
+                    <label><input type="checkbox" name="personality[]" value="Playful"> Playful</label>
+                    <label><input type="checkbox" name="personality[]" value="Calm"> Calm</label>
+                    <label><input type="checkbox" name="personality[]" value="Energetic"> Energetic</label>
+                    <label><input type="checkbox" name="personality[]" value="Affectionate"> Affectionate</label>
+                </div>
             </div>
             <button type="button" id="backBtn" style="display: none;">Back</button>
             <button type="button" id="nextBtn">Next</button>

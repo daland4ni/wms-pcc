@@ -15,7 +15,7 @@
 
   <div class="content">
     <div class="gallery-name">
-      <p style="color: #3C5190; font-size: 7vh; text-align: center; text-shadow: 2px 1px #000; font-weight: 600;" >Our Pets</p>
+      <p >Meet Our Furry Friends!</p>
     </div>
 
     <?php
@@ -56,7 +56,7 @@
           <div class="popup-content">
             <img src="<?= $pet->img; ?>" alt="<?= 'Pet' . (string) $pet->petID; ?>">
             <p class="popup-text">
-              <b style="font-size: 30px; color: #486989"><?= $pet->name; ?></b><br>
+              <b style="font-size: 30px; color: #3C5190"><?= $pet->name; ?></b><br>
               Age: <?= $finalAge; ?><br>
               Sex: <?= $pet->sex; ?><br>
               Breed: <?= $pet->breed; ?><br><br>

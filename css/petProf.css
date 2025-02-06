@@ -40,14 +40,18 @@ body {
 .caption {
   padding: 10px;
   font-size: 14px;
-  color: #555;
+  color: #3C5190;
   background-color: #f9f9f9;
   border-top: 1px solid #ddd;
 }
 
-.gallery-name {
-  color: black;
+.gallery-name p{
+  color: #3C5190;
   font-size: 45px;
+  font-family: Poppins;
+  text-align: center;
+  font-weight: bold;
+
 }
 
 .gallery-item:hover {
@@ -119,7 +123,7 @@ body {
 button {
   font-family: Poppins;
   color: white;
-  background-color: #486989;
+  background-color: #3C5190;
   cursor: pointer;
   width: 280px;
   height: 40px;

@@ -65,7 +65,7 @@ $matchingPets = array_filter($petsData, function ($pet) use ($petType, $petAge, 
 
     <?php if (!empty($matchingPets)): ?>
         <?php $matchesCount = count($matchingPets);  ?>
-        <h1>We found <?= (string)$matchesCount ?> matching pets!</h1>
+        <h1 style="color: #3C5190; font-size: 40px">We Found <?= (string)$matchesCount ?> Matching Pets!</h1>
     <?php else : ?>
         <h1>We found no pets :(</h1>
     <?php endif; ?>
