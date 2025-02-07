@@ -23,103 +23,116 @@
 
         ?>
 
-        <?php if (!$petID): ?>
+        <?php if (isset($_SESSION["username"])): ?>
             <div class="selected-pet">
                 <img style="display: block; margin-left: auto; margin-right: auto; width: 30%" src="../pics/unkown.jpg"
                     alt="unknown icon" />
-                <h3 style="text-align: center">No selected pet as of now</h3>
-                <a href="petProf.php"><button style="margin-bottom:10px;" class="submit-btn">Check our Pet
-                        Profiles</button></a><br />
-                <a href="matching.php"><button style="margin-bottom:20px;" class="submit-btn">Match-A-Pet</button></a>
+                <h3 style="text-align: center">You are logged in as a Rehomer</h3>
+                <h4 style="text-align: center">Log out to apply as an adopter</h4>
+                <a href="logout.php"><button style="margin-bottom:10px;" class="submit-btn">Logout</button></a>
             </div>
-        <?php else:
-            include '../data/petData.php';
-            $petFound = getPetData($petID);
-            ?>
+        <?php else: ?>
 
-            <div class="selected-pet">
-                <img style="display: block; margin-left: auto; margin-right: auto; width: 30%; border-radius:8px;"
-                    src="<?= $petFound['img'] ?>" alt="pet pic" />
-                <h3 style="text-align: center">Adopting <?= $petFound['name'] ?></h3>
-            </div>
+            <?php if (!$petID): ?>
+                <div class="selected-pet">
+                    <img style="display: block; margin-left: auto; margin-right: auto; width: 30%" src="../pics/unkown.jpg"
+                        alt="unknown icon" />
+                    <h3 style="text-align: center">No selected pet as of now</h3>
+                    <a href="petProf.php"><button style="margin-bottom:10px;" class="submit-btn">Check our Pet
+                            Profiles</button></a><br />
+                    <a href="matching.php"><button style="margin-bottom:20px;" class="submit-btn">Match-A-Pet</button></a>
+                </div>
+            <?php else:
+                include '../data/petData.php';
+                $petFound = getPetData($petID);
+                ?>
 
+                <div class="selected-pet">
+                    <img style="display: block; margin-left: auto; margin-right: auto; width: 30%; border-radius:8px;"
+                        src="<?= $petFound['img'] ?>" alt="pet pic" />
+                    <h3 style="text-align: center">Adopting <?= $petFound['name'] ?></h3>
+                </div>
+
+
+
+                <hr /><br>
+                <h2>Pet Adoption Form</h2>
+                <form action="adopt-result.php" method="post">
+                    <input type="number" value="<?= $petID ?>" name="petID" hidden>
+                    <div class="form-group">
+                        <div class="radio-container-row">
+                            <label><input type="radio" name="honorific" value="male">Mr.</label>
+                            <label><input type="radio" name="honorific" value="female">Ms.</label>
+                            <label><input type="radio" name="honorific" value="other">Mx.</label>
+                        </div>
+                    </div>
+                    <div class="form-group-1">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Enter your first name">
+                    </div>
+                    <div class="form-group-1">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+                    </div>
+                    <div class="form-group-1">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group-1">
+                        <label for="phonenum">Phone Number</label>
+                        <input type="text" id="phonenum" name="phonenum" placeholder="Enter your mobile number">
+                    </div>
+                    <div class="form-group">
+                        <p>Overall Household Income</p>
+                        <div class="radio-container-col">
+                            <label><input type="radio" name="monthly" value="1">Less than ₱5,000</label>
+                            <label><input type="radio" name="monthly" value="2">₱5,000 to ₱10,000</label>
+                            <label><input type="radio" name="monthly" value="3">₱10,001 to ₱30,000</label>
+                            <label><input type="radio" name="monthly" value="4">₱30,001 to ₱50,000</label>
+                            <label><input type="radio" name="monthly" value="5">₱50,001 to ₱75,000</label>
+                            <label><input type="radio" name="monthly" value="6">More than ₱75,000</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p>Do you have any other pets in your household?</p>
+                        <div class="radio-container-row">
+                            <label><input type="radio" name="otherpets" value="yes">Yes</label>
+                            <label><input type="radio" name="otherpets" value="no">No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Does anyone in your household have any allergic reaction to animals?</p>
+                        <div class="radio-container-row">
+                            <label><input type="radio" name="allergen" value="yes">Yes</label>
+                            <label><input type="radio" name="allergen" value="no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p>How does your work setup affect your pet fostering?</p>
+                        <div class="radio-container-col">
+                            <label><input type="radio" name="worksetup" value="1">Work from Home but can attend to pet</label>
+                            <label><input type="radio" name="worksetup" value="2">Work from Home but someone else can attend to
+                                pet</label>
+                            <label><input type="radio" name="worksetup" value="3">On-site work but someone else can attend to
+                                pet</label>
+                            <label><input type="radio" name="worksetup" value="4">On-site work with no one else to attend to
+                                pet</label>
+                            <label><input type="radio" name="worksetup" value="5">Unemployed</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p>What is your residential type?</p>
+                        <div class="radio-container-col">
+                            <label><input type="radio" name="residential" value="1">House is owned</label>
+                            <label><input type="radio" name="residential" value="2">In rental with no Pet Restrictions</label>
+                            <label><input type="radio" name="residential" value="3">In rental with Pet Restrictions</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            <?php endif; ?>
         <?php endif; ?>
-
-        <hr /><br>
-        <h2>Pet Adoption Form</h2>
-        <form>
-            <div class="form-group">
-                <div class="radio-container-row">
-                    <label><input type="radio" name="honorific" value="male">Mr.</label>
-                    <label><input type="radio" name="honorific" value="female">Ms.</label>
-                    <label><input type="radio" name="honorific" value="other">Mx.</label>
-                </div>
-            </div>
-            <div class="form-group-1">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="fname" placeholder="Enter your first name">
-            </div>
-            <div class="form-group-1">
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname" placeholder="Enter your last name">
-            </div>
-            <div class="form-group-1">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email">
-            </div>
-            <div class="form-group-1">
-                <label for="phonenum">Phone Number</label>
-                <input type="text" id="phonenum" name="phonenum" placeholder="Enter your mobile number">
-            </div>
-            <div class="form-group">
-                <p>Monthly Income</p>
-                <div class="radio-container-col">
-                    <label><input type="radio" name="monthly" value="1">Less than ₱5,000</label>
-                    <label><input type="radio" name="monthly" value="2">₱5,000 to ₱10,000</label>
-                    <label><input type="radio" name="monthly" value="3">₱10,001 to ₱30,000</label>
-                    <label><input type="radio" name="monthly" value="4">₱30,001 to ₱50,000</label>
-                    <label><input type="radio" name="monthly" value="5">₱50,001 to ₱75,000</label>
-                    <label><input type="radio" name="monthly" value="6">More than ₱75,000</label>
-                </div>
-            </div>
-            <div class="form-group">
-                <p>Do you have any other pets in your household?</p>
-                <div class="radio-container-row">
-                    <label><input type="radio" name="otherpets" value="yes">Yes</label>
-                    <label><input type="radio" name="otherpets" value="no">No</label>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <p>Does anyone in your household have any allergic reaction to animals?</p>
-                <div class="radio-container-row">
-                    <label><input type="radio" name="allergen" value="yes">Yes</label>
-                    <label><input type="radio" name="allergen" value="no">No</label>
-                </div>
-            </div>
-            <div class="form-group">
-                <p>How does your work setup affect your pet fostering?</p>
-                <div class="radio-container-col">
-                    <label><input type="radio" name="worksetup" value="1">Work from Home but can attend to pet</label>
-                    <label><input type="radio" name="worksetup" value="2">Work from Home but someone else can attend to
-                        pet</label>
-                    <label><input type="radio" name="worksetup" value="3">On-site work but someone else can attend to
-                        pet</label>
-                    <label><input type="radio" name="worksetup" value="4">On-site work with no one else to attend to
-                        pet</label>
-                    <label><input type="radio" name="worksetup" value="5">Unemployed</label>
-                </div>
-            </div>
-            <div class="form-group">
-                <p>What is your residential type?</p>
-                <div class="radio-container-col">
-                    <label><input type="radio" name="residential" value="1">House is owned</label>
-                    <label><input type="radio" name="residential" value="2">In rental with no Pet Restrictions</label>
-                    <label><input type="radio" name="residential" value="3">In rental with Pet Restrictions</label>
-                </div>
-            </div>
-            <button type="submit" class="submit-btn">Submit</button>
-        </form>
     </div>
     <?php include 'footer.php'; ?>
 </body>

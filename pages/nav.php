@@ -28,7 +28,9 @@ session_start();
             <a href="home.php">Home</a> <!-- justine -->
             <a href="petProf.php">Pet Profiles</a> <!-- adelaine -->
             <a href="matching.php">Match-A-Pet</a> <!-- aeron -->
-            <a href="adopt.php">Adopt Now!</a> <!-- aeron -->
+            <?php if (!isset($_SESSION["username"])) : ?>
+                <a href="adopt.php">Adopt Now!</a> <!-- aeron -->
+            <?php endif; ?>
             <a href="fosters.php">Meet the Rehomers</a> <!-- rence -->
             <?php if (isset($_SESSION["username"])) : ?>
                 <a href="profile.php">Profile</a>
