@@ -76,6 +76,7 @@
 
             <h2>Add New Pet for Adoption</h2>
             <form>
+                <input type="text" name="username" value="<?=$_SESSION['username'];?>" hidden />
                 <div class="form-group">
                     <div class="radio-container-row">
                         <label><input type="radio" name="type" value="Dog" required>Dog</label>
@@ -140,7 +141,8 @@
             ?>
 
             <h2>Edit <?= $pet['name'] ?>'s Information</h2>
-            <form>
+            <form action="manage-pets.php?action=edit" method="POST">
+                <input type="number" value="<?=$pet['petID']?>" name="petID" hidden>
                 <div class="form-group">
                     <div class="radio-container-row">
                         <label><input type="radio" name="type" value="Dog" <?php if ($pet['type'] === 'Dog')
@@ -156,10 +158,13 @@
                     <input type="text" id="name" name="name" placeholder="Enter your pet's name" required
                         value="<?= $pet['name'] ?>">
                 </div>
-                <div class="form-group-1">
+                <br><div class="age-group">
                     <label for="age">Age:</label>
-                    <input type="number" id="age" name="age" placeholder="Enter your pet's age" required
-                        value="<?= $pet['age'] ?>">
+                    <input type="number" id="age" name="age" placeholder="Enter your pet's age" value="<?=$pet['age']?>" required>
+                    <select name="moyo">
+                        <option <?php if ($pet['age'] >= 1) echo 'selected'; ?> value="yo">year/s old</option>
+                        <option <?php if ($pet['age'] < 1) echo 'selected'; ?> value="mo">month/s old</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <p>Sex</p>
