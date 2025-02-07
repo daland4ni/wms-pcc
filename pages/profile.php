@@ -107,7 +107,7 @@ if (!isset($_SESSION["username"])) {
 
     <div class="container">
         <h1>Hello, <?= $userData['fname'] ?>!</h1>
-        <button>Add New Pet for Adoption</button>
+        <a href="add-pet.php"><button>Add New Pet for Adoption</button></a>
         <h3>Your pets for adoption:</h3>
 
         <?php if (checkUserPets($_SESSION['username'])): ?>
