@@ -66,6 +66,9 @@ $action = $_GET['action'] ?? false;
             </form>
         <?php else: ?>
             <form action="auth.php?action=login" method="POST">
+                <div>
+            <p style="margin-top: 0px; color: #3C5190; font-size: 35px; text-align: center; font-weight: bold">LOGIN</p>
+        </div>
                 <div class="form-group-1">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" placeholder="Enter your Username">
