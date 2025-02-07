@@ -58,3 +58,15 @@ function getPetBreeds($type)
     }
     return $petBreeds;
 }
+
+function getPetRehomer($petID) {
+    include "../pages/conn.php";
+    $sql = "SELECT * FROM rehomer_pets WHERE petID='$petID'";
+    $result = $conn->query($sql);
+    $rehomerUsername = false;
+    if ($result->num_rows > 0) {  
+        $row = $result->fetch_assoc();
+        $rehomerUsername = $row['username'];
+    }
+    return $rehomerUsername;
+}

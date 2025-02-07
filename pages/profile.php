@@ -18,7 +18,7 @@ if (!isset($_SESSION["username"])) {
     <link rel="stylesheet" href="../css/profile.css">
     <link rel="stylesheet" href="../css/form-elements.css">
     <link rel="icon" href="../pics/logo.png" type="image/x-icon">
-    <style>
+    <!-- <style>
         .popup {
             position: fixed;
             top: 0;
@@ -97,7 +97,7 @@ if (!isset($_SESSION["username"])) {
             background: #D1BDC7;
             color: white;
         }
-    </style>
+    </style> -->
 </head>
 
 <body class="moolah">
@@ -119,7 +119,7 @@ if (!isset($_SESSION["username"])) {
                 ?>
                 <div class="gallery">
                     <div class="popup-content">
-                        <img src="<?= $pet['img']; ?>" alt="<?= 'Pet' . (string) $pet['petID']; ?>">
+                        <img src="<?= $pet['img']; ?>" alt="<?=$pet['img'];?>">
                         <p class="popup-text">
                             <b style="font-size: 30px; color: #3C5190"><?= $pet['name']; ?></b><br>
                             Sex: <?= $pet['sex']; ?><br>

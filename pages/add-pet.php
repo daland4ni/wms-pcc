@@ -200,7 +200,11 @@
                     <label for="description">Pet's Description</label>
                     <textarea id="description" name="description" rows="4" cols="50"><?= $pet["description"] ?></textarea>
                 </div><br>
-                <button type="submit" class="submit-btn">Submit</button>
+                <button type="submit" style="margin-bottom:1vh;" class="submit-btn">Save Changes</button>
+            </form>
+            <form action="manage-pets.php?action=delete" method="POST">
+                <input type="number" value="<?=$pet['petID']?>" name="petID" hidden>
+                <button type="submit" class="delete-btn">Remove <?=$pet['name']?> from Adoption Roll</button>
             </form>
 
         <?php endif; ?>
