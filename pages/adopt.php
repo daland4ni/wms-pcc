@@ -25,7 +25,8 @@
 
         <?php if (!$petID): ?>
             <div class="selected-pet">
-                <img style="display: block; margin-left: auto; margin-right: auto; width: 30%" src="../pics/unkown.jpg" alt="unknown icon" />
+                <img style="display: block; margin-left: auto; margin-right: auto; width: 30%" src="../pics/unkown.jpg"
+                    alt="unknown icon" />
                 <h3 style="text-align: center">No selected pet as of now</h3>
                 <a href="petProf.php"><button style="margin-bottom:10px;" class="submit-btn">Check our Pet
                         Profiles</button></a><br />
@@ -37,7 +38,8 @@
             ?>
 
             <div class="selected-pet">
-                <img style="display: block; margin-left: auto; margin-right: auto; width: 30%; border-radius:8px;" src="<?= $petFound['img'] ?>" alt="pet pic" />
+                <img style="display: block; margin-left: auto; margin-right: auto; width: 30%; border-radius:8px;"
+                    src="<?= $petFound['img'] ?>" alt="pet pic" />
                 <h3 style="text-align: center">Adopting <?= $petFound['name'] ?></h3>
             </div>
 
@@ -118,7 +120,8 @@
             </div>
             <button type="submit" class="submit-btn">Submit</button>
         </form>
-        </d>
+    </div>
+    <?php include 'footer.php'; ?>
 </body>
 
 </html>
