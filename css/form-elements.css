@@ -89,6 +89,18 @@ input[type="radio"], input[type="checkbox"] {
     transition: background-color 0.3s;
 }
 
+.delete-btn {
+    width: 100%;
+    background: #BE3144;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
 .submit-btn:hover {
     background: #5a54d3;
 }

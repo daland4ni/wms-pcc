@@ -204,7 +204,7 @@
             </form>
             <form action="manage-pets.php?action=delete" method="POST">
                 <input type="number" value="<?=$pet['petID']?>" name="petID" hidden>
-                <button type="submit" class="submit-btn">Remove <?=$pet['name']?> from Adoption Roll</button>
+                <button type="submit" class="delete-btn">Remove <?=$pet['name']?> from Adoption Roll</button>
             </form>
 
         <?php endif; ?>
