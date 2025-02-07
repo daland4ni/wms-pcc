@@ -8,18 +8,26 @@ if (isset($_GET['action']) && $_GET['action'] === 'petIDB') {
     include '../pages/conn.php';
     include '../data/petData.php';
 
+    $petIDs = getPetIDs();
+
     $counterS = 0;
     $counterF = 0;
-    foreach ($petData as $pet) {
-        $finalCharacteristics = join(";", $pet->characteristics);
+    foreach ($petIDs as $petID) {
 
-        $checkPetID = "SELECT * FROM pet_data WHERE petID='$pet->petID'";
+        $checkPetID = "SELECT * FROM rehomer_pets WHERE petID='$petID'";
         $result = $conn->query($checkPetID);
         if ($result->num_rows > 0) {
             $counterF++;
         } else {
-            $insertPet = "INSERT INTO pet_data(petID,name,type,sex,age,breed,characteristics,img,description)
-            VALUES ('$pet->petID','$pet->name','$pet->type','$pet->sex','$pet->age','$pet->breed','$finalCharacteristics','$pet->img','$pet->description')";
+            $userRand = rand(1,4);
+            $username = '';
+            if ($userRand === 1) { $username = 'daland4ni'; }
+            if ($userRand === 2) { $username = 'mowchi'; }
+            if ($userRand === 3) { $username = 'adelaine'; }
+            if ($userRand === 4) { $username = 'rencio'; }
+
+            $insertPet = "INSERT INTO rehomer_pets(petID,username)
+            VALUES ('$petID','$username')";
             if ($conn->query($insertPet)) {
                 $counterS++;
             } else {

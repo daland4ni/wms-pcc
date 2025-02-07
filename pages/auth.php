@@ -40,7 +40,7 @@ if ($action === 'login') {
         $insertQuerty = "INSERT INTO rehomer_info(username,pword,fname,lname,phonenum,honorific) 
         VALUES ('$username','$pword','$fname','$lname','$phonenum','$honorific')";
         if ($conn->query($insertQuerty)) {
-            header("Location: login.php");
+            header("Location: login.php?success=1");
             exit();
         }
     }

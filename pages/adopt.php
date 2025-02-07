@@ -25,7 +25,7 @@
 
         <?php if (isset($_SESSION["username"])): ?>
             <div class="selected-pet">
-                <img style="display: block; margin-left: auto; margin-right: auto; width: 30%" src="../pics/logo.jpg"
+                <img style="display: block; margin-left: auto; margin-right: auto; width: 30%" src="../pics/logo.png"
                     alt="unknown icon" />
                 <h3 style="text-align: center">You are logged in as a Rehomer</h3>
                 <h4 style="text-align: center">Log out to apply as an adopter</h4>

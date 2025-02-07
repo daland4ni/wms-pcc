@@ -32,7 +32,7 @@
         $pet = getPetData($id);
 
         $applicant = getPetApplicants($id);
-        if (!$applicant || ($applicant && $applicant['qualified']==0)):
+        if (!$applicant || ($applicant && $applicant['qualified'] === 0)):
           $finalAge;
           if ($pet['age'] < 1) {
             $finalAge = $pet['age'] * 10;

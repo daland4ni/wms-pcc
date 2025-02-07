@@ -75,6 +75,8 @@ $action = $_GET['action'] ?? false;
                 </div>
                 <?php if (isset($_GET['error']) && $_GET['error'] == '1'): ?>
                     <p style="color: red;">Incorrect Username or Password</p>
+                <?php elseif (isset($_GET['success']) && $_GET['success'] == '1'): ?>
+                    <p style="color: green;">Rehomer Account Registered. Please Login</p>
                 <?php endif; ?>
                 <div class="form-group-1">
                     <label for="username">Username</label>
