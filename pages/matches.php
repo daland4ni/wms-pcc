@@ -94,7 +94,7 @@ $matchingPets = array_filter($petsData, function ($pet) use ($petType, $petAge, 
                 </div>
             <?php endforeach; ?>
         <?php else: ?>
-            <p>No pets found matching your criteria.</p>
+            <p style="color:#555;">No pets found matching your criteria.</p>
         <?php endif; ?>
     </div>
     <br>
