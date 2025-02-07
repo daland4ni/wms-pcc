@@ -18,12 +18,51 @@ body {
     border-radius: 10px;
     width: 200px;
     background-color: #ddd;
+    height: 525px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
 }
 
 .pet-card img {
     width: 100%;
     border-radius: 10px;
+    height: 200px; /* Fixed image height */
+    object-fit: cover;
 }
+
+.pet-card .details {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.pet-card p {
+    /* font-size: px; */
+    line-height: 1.2;
+    text-align: center;
+    overflow: hidden;
+    word-break: break-word;
+    margin-top: 5px;
+}
+
+.pet-card .description {
+    flex-grow: 1;
+    font-size: clamp(17px, 1.2vw, 13px); /* Auto-shrink text */
+    max-height: 4em; /* Limit to 3 lines */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+
 
 button {
     font-family: Poppins;

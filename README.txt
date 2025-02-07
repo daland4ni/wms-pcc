@@ -1,3 +1,3 @@
 - dani
 
-paki-import muna ng sql hehe
+paki-import muna ng sql
