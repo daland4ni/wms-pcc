@@ -43,3 +43,18 @@ function getPetIDs()
     }
     return $petIDs;
 }
+
+function getPetBreeds($type)
+{
+    include "../pages/conn.php";
+    $sql = "SELECT breed FROM pet_data WHERE type='$type'";
+    $result = $conn->query($sql);
+    $raw = $result->fetch_all(MYSQLI_ASSOC);
+    $petBreeds = [];
+    foreach ($raw as $value) {
+        if (!in_array($value['breed'], $petBreeds)) {
+            array_push($petBreeds, $value['breed']);
+        }
+    }
+    return $petBreeds;
+}

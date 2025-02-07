@@ -9,6 +9,24 @@
     <link rel="stylesheet" href="../css/adopt.css">
     <link rel="stylesheet" href="../css/form-elements.css">
     <link rel="icon" href="../pics/logo.png" type="image/x-icon">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const selectMenu = document.getElementById("toggleSelect");
+            const catOptions = document.getElementById("catOptions");
+            const dogOptions = document.getElementById("dogOptions");
+
+            selectMenu.addEventListener("change", function () {
+                if (selectMenu.value === "Dog") {
+                    catOptions.style.display = "none";
+                    dogOptions.style.display = "block";
+                } else {
+                    catOptions.style.display = "block";
+                    dogOptions.style.display = "none";
+                }
+            });
+        });
+    </script>
 </head>
 
 <body class="moolah">
@@ -16,10 +34,10 @@
     <?php include "nav.php"; ?>
 
     <div class="container">
-    <form id="petForm" action="matches.php" method="POST">
+        <form id="petForm" action="matches.php" method="POST">
             <div class="question active">
                 <h2>What pet do you prefer?</h2><br>
-                <select name="petType" required>
+                <select id="toggleSelect" name="petType" required>
                     <option value="dog">Dog</option>
                     <option value="cat">Cat</option>
                 </select>
@@ -34,9 +52,29 @@
                 </select>
             </div>
             <div class="question">
-                <h2>How about your pet's breed?</h2><br>
-                <input type="text" name="petBreed">
-                
+                <h2>Do you have a desired age for your pet?</h2><br>
+                <?php
+                include "../data/petData.php";
+                $catBreeds = getPetBreeds("Cat");
+                $dogBreeds = getPetBreeds("Dog");
+                ?>
+                <select name="petBreed" required>
+                    <option value="">Any breed is fine</option>
+                    <div id="catOptions">
+                        <optgroup label="CAT BREEDS">
+                            <?php foreach ($catBreeds as $breed): ?>
+                                <option value="<?= $breed ?>"><?= $breed ?></option>
+                            <?php endforeach; ?>
+                        </optgroup>
+                    </div>
+                    <div id="dogOptions">
+                        <optgroup label="DOG BREEDS">
+                            <?php foreach ($dogBreeds as $breed): ?>
+                                <option value="<?= $breed ?>"><?= $breed ?></option>
+                            <?php endforeach; ?>
+                        </optgroup>
+                    </div>
+                </select>
             </div>
             <div class="question">
                 <div class="chk-box">
