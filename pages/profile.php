@@ -25,7 +25,7 @@ if (!isset($_SESSION["username"])) {
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.2);
             display: none;
             align-items: center;
             justify-content: center;
@@ -46,6 +46,8 @@ if (!isset($_SESSION["username"])) {
         .popup-content-a {
             max-width: 650px;
             width: 100%;
+            color:#3C5190;
+            font-size: 20px;
         }
 
         .popup-content {
@@ -106,8 +108,8 @@ if (!isset($_SESSION["username"])) {
     ?>
 
     <div class="container">
-        <h1>Hello, <?= $userData['fname'] ?>!</h1>
-        <button>Add New Pet for Adoption</button>
+        <h1 style="color:#555; font-size:50px; margin-top:0; text-align:center">Hello, <?= $userData['fname'] ?>!</h1>
+        <button class="add-btn">Add New Pet for Adoption</button>
         <h3>Your pets for adoption:</h3>
 
         <?php if (checkUserPets($_SESSION['username'])): ?>

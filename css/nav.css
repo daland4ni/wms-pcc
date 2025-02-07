@@ -26,17 +26,17 @@ body {
 }
 
 .nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-.nav-left {
+/* .nav-left {
     display: flex;
     align-items: center;
     text-decoration: none;  
     font-size: 20px;
     padding-right: 10%;
     
-}
+} */
 
 .nav-left, .nav-right {
     color: beige;
@@ -47,8 +47,8 @@ a {
 }
 
 .nav-left img {
-    height: 65px; 
-    margin-right: 10px; 
+    height: 80px; 
+    /* margin-right: 0.4rem;  */
 }
 
 .nav-right {
