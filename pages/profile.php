@@ -119,7 +119,7 @@ if (!isset($_SESSION["username"])) {
                 ?>
                 <div class="gallery">
                     <div class="popup-content">
-                        <img src="<?= $pet['img']; ?>" alt="<?= 'Pet' . (string) $pet['petID']; ?>">
+                        <img src="<?= $pet['img']; ?>" alt="<?=$pet['img'];?>">
                         <p class="popup-text">
                             <b style="font-size: 30px; color: #3C5190"><?= $pet['name']; ?></b><br>
                             Sex: <?= $pet['sex']; ?><br>
