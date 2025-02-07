@@ -9,24 +9,6 @@
     <link rel="stylesheet" href="../css/adopt.css">
     <link rel="stylesheet" href="../css/form-elements.css">
     <link rel="icon" href="../pics/logo.png" type="image/x-icon">
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const selectMenu = document.getElementById("toggleSelect");
-            const catOptions = document.getElementById("catOptions");
-            const dogOptions = document.getElementById("dogOptions");
-
-            selectMenu.addEventListener("change", function () {
-                if (selectMenu.value === "Dog") {
-                    catOptions.style.display = "none";
-                    dogOptions.style.display = "block";
-                } else {
-                    catOptions.style.display = "block";
-                    dogOptions.style.display = "none";
-                }
-            });
-        });
-    </script>
 </head>
 
 <body class="moolah">
@@ -37,14 +19,14 @@
         <form id="petForm" action="matches.php" method="POST">
             <div class="question active">
                 <h2>What pet do you prefer?</h2><br>
-                <select id="toggleSelect" name="petType" required>
+                <select id="toggleSelect" name="petType">
                     <option value="dog">Dog</option>
                     <option value="cat">Cat</option>
                 </select>
             </div>
             <div class="question">
                 <h2>Do you have a desired age for your pet?</h2><br>
-                <select name="petAge" required>
+                <select name="petAge">
                     <option value="<1">&lt; 1 year old</option>
                     <option value="1-2">1 - 2 years old</option>
                     <option value="3+">3+ years old</option>
@@ -58,7 +40,7 @@
                 $catBreeds = getPetBreeds("Cat");
                 $dogBreeds = getPetBreeds("Dog");
                 ?>
-                <select name="petBreed" required>
+                <select name="petBreed">
                     <option value="">Any breed is fine</option>
                     <div id="catOptions">
                         <optgroup label="CAT BREEDS">
