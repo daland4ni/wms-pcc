@@ -66,6 +66,21 @@
     </style>
 </head>
 
+<?php 
+
+$error = "";
+
+if (isset($_GET['error'])) {
+    if ($_GET['error'] === '1') { $error = "No file uploaded"; }
+    else if ($_GET['error'] === '2') { $error = "Only use PNG or JPG files."; }
+    else if ($_GET['error'] === '3') { $error = "Invalid file type"; }
+    else if ($_GET['error'] === '4') { $error = "File should be < 10 MB"; }
+    else if ($_GET['error'] === '5') { $error = "File upload failed"; }
+    else { $error = "Database error"; }
+}
+
+?>
+
 <body class="moolah">
 
     <?php include "nav.php"; ?>
@@ -75,6 +90,7 @@
         <?php if (!isset($_GET["petID"])): ?>
 
             <h2>Add New Pet for Adoption</h2>
+            <p style="color: red;"><?=$error?></p>
             <form action="manage-pets.php?action=add" method="post" enctype="multipart/form-data">
 
                 <input type="text" name="username" value="<?=$_SESSION['username'];?>" hidden />
@@ -124,7 +140,7 @@
 
                 <div class="form-group-1">
                     <label for="img" class="file-upload">
-                        Upload your Pet's Image here
+                        Upload your Pet's Image here (less than 10MB)
                     </label>
                     <input type="file" name="img" id="img">
                 </div><br>

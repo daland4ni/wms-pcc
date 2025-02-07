@@ -30,6 +30,9 @@ $action = $_GET['action'] ?? false;
 
         <?php if ($action === "register"): ?>
             <h2>Become a Rehomer!</h2>
+            <?php if (isset($_GET['error']) && $_GET['error'] == '1'): ?>
+                <p style="color: red;">Username already taken</p>
+            <?php endif; ?>
             <form action="auth.php?action=register" method="POST">
                 <div class="form-group">
                     <div class="radio-container-row">
@@ -67,8 +70,12 @@ $action = $_GET['action'] ?? false;
         <?php else: ?>
             <form action="auth.php?action=login" method="POST">
                 <div>
-            <p style="margin-top: 0px; color: #3C5190; font-size: 35px; text-align: center; font-weight: bold">LOGIN</p>
-        </div>
+                    <p style="margin-top: 0px; color: #3C5190; font-size: 35px; text-align: center; font-weight: bold">LOGIN
+                    </p>
+                </div>
+                <?php if (isset($_GET['error']) && $_GET['error'] == '1'): ?>
+                    <p style="color: red;">Incorrect Username or Password</p>
+                <?php endif; ?>
                 <div class="form-group-1">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" placeholder="Enter your Username">
@@ -82,6 +89,8 @@ $action = $_GET['action'] ?? false;
             </form>
         <?php endif; ?>
     </div>
+
+    <?php include 'footer.php'; ?>
 </body>
 
 </html>

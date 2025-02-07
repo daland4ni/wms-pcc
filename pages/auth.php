@@ -17,6 +17,9 @@ if ($action === 'login') {
         $_SESSION['username']= $row['username'];
         header('Location: profile.php');
         exit();
+    } else {
+        header('Location: login.php?error=1');
+        exit();
     }
 
 } else if ($action === 'register') {
@@ -31,7 +34,8 @@ if ($action === 'login') {
     $checkUser="SELECT * From rehomer_info where username='$username'";
     $result = $conn->query($checkUser);
     if($result->num_rows > 0) {
-        echo "Username already taken.";
+        header('Location: login.php?action=register&error=1');
+        exit();
     } else {
         $insertQuerty = "INSERT INTO rehomer_info(username,pword,fname,lname,phonenum,honorific) 
         VALUES ('$username','$pword','$fname','$lname','$phonenum','$honorific')";

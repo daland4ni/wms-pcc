@@ -10,7 +10,7 @@
     <link rel="stylesheet" href=".././css/home.css">
 </head>
 <body class="bgc">
-    <?php include "nav.php"; ?>
+    <?php include "nav.php";?>
     
 <!------------------------------------------------------------------>
     <div class="container-1">

@@ -57,6 +57,9 @@
 
                 <hr /><br>
                 <h2>Pet Adoption Form</h2>
+                <?php if (isset($_GET['error']) && $_GET['error'] === '1') : ?>
+                    <p style="color: red;">You have already sent an application to this pet.</p>
+                <?php endif; ?>
                 <form action="adopt-result.php" method="post">
                     <input type="number" value="<?= $petID ?>" name="petID" hidden>
                     <div class="form-group">
@@ -134,7 +137,8 @@
             <?php endif; ?>
         <?php endif; ?>
     </div>
-    <?php include 'footer.php'; ?>
+    <?php include 'footer.php';
+    unset($_SESSION['msg']) ?>
 </body>
 
 </html>

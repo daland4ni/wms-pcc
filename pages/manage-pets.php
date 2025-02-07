@@ -39,7 +39,9 @@ if ($action === 'add') {
     }
 
     if (!isset($_FILES["img"]) || $_FILES["img"]["error"] != 0) {
-        die("Error: No file uploaded or an error occurred.");
+        header('Location: add-pet.php?error=1');
+        exit();
+        //die("Error: No file uploaded or an error occurred.");
     }
 
     $file = $_FILES["img"];
@@ -49,7 +51,9 @@ if ($action === 'add') {
 
 
     if (!in_array($fileType, $allowedTypes)) {
-        die("Error: Only JPG, JPEG, PNG, and GIF files are allowed.");
+        header('Location: add-pet.php?error=2');
+        exit();
+        //die("Error: Only JPG, JPEG, PNG, and GIF files are allowed.");
     }
 
     $finfo = finfo_open(FILEINFO_MIME_TYPE);
@@ -58,11 +62,15 @@ if ($action === 'add') {
 
     $allowedMimeTypes = ['image/jpeg', 'image/png', 'image/gif'];
     if (!in_array($mimeType, $allowedMimeTypes)) {
-        die("Error: Invalid file type detected.");
+        header('Location: add-pet.php?error=3');
+        exit();
+        //die("Error: Invalid file type detected.");
     }
 
     if ($fileSize > $maxFileSize) {
-        die("Error: File size exceeds 5MB limit.");
+        header('Location: add-pet.php?error=4');
+        exit();
+        //die("Error: File size exceeds 5MB limit.");
     }
 
 
@@ -79,10 +87,16 @@ if ($action === 'add') {
             $insertQuerty3 = "UPDATE pet_data SET img='$targetFilePath' WHERE petID='$newPetID'";
             if ($conn->query($insertQuerty3)) {
                 if (!move_uploaded_file($file["tmp_name"], $targetFilePath)) {
-                    echo "File upload failed.";
+                    header('Location: add-pet.php?error=5');
+                    exit();
+                    //echo "File upload failed.";
                 }
                 header("Location: profile.php");
                 exit();
+            } else {
+                header('Location: add-pet.php?error=6');
+                exit();
+                //database error
             }
         }
     }

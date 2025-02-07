@@ -17,6 +17,7 @@ $petID = $_POST['petID'];
 
 include '../data/petData.php';
 include '../data/userData.php';
+include 'conn.php';
 
 $pet = getPetData($petID);
 $rehomerUsername = getPetRehomer($petID);
@@ -71,8 +72,20 @@ if ($rehomer['honorific'] === 'male') {
 }
 
 $qualified = $points >= 5;
+$confirmed = false;
 
-
+$checkUser = "SELECT * From adopter_data where phonenum='$phonenum'";
+$result = $conn->query($checkUser);
+if ($result->num_rows > 0) {
+    $_SESSION['msg'] = "You have already sent an application to this pet.";
+    header("Location: adopt.php?petID=" . $petID . "&error=1");
+    exit();
+} else {
+    $insertQuerty = "INSERT INTO adopter_data(petID,fname,lname,sex,email,phonenum,qualified,confirmed) 
+        VALUES ('$petID','$fname','$lname','$sex','$email','$phonenum','$qualified','$confirmed')";
+    if ($conn->query($insertQuerty)) {
+    }
+}
 ?>
 
 
@@ -113,7 +126,7 @@ $qualified = $points >= 5;
 
                 Warmest congratulations,<br /><br />
 
-                <b><?= $rehomerHonorific .  $rehomer['fname'] . " " . $rehomer['lname'] ?></b><br />
+                <b><?= $rehomerHonorific . $rehomer['fname'] . " " . $rehomer['lname'] ?></b><br />
                 <?= $pet['name'] . "'s Rehomer" ?><br />
                 Pet Connect - Caloocan<br />
                 Rehomer's Contact Number: <?= $rehomer['phonenum'] ?>
