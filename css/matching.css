@@ -1,100 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-    font-family: Poppins;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  font-family: Poppins;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d1bdc7;
+  background: linear-gradient(
+      rgba(209, 189, 199, 0.8),
+      rgba(209, 189, 199, 0.8)
+    ),
+    url("../pics/logoSmall.png") no-repeat center center fixed;
+  background-size: cover;
 }
 
 .moolah {
-    background-color: #D1BDC7;
-    font-family: Poppins;
+  background-color: #d1bdc7;
+  font-family: Poppins;
 }
 
 .container {
-    background: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
 }
 .question {
-    display: none;
-    margin-bottom: 2%;
-    text-align: center;
-    
+  display: none;
+  margin-bottom: 2%;
+  text-align: center;
 }
 .active {
-    display: block;
+  display: block;
 }
 button {
-    margin-top: 10px;
-    padding: 8px 15px;
-    border: none;
-    background-color: #3C5190;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 15%;
-    height: 40px;
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  background-color: #3c5190;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 15%;
+  height: 40px;
 }
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 select {
-    width: 80%;
-    background-color: #D9D9D9;
-    color: #555;
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 6px;
-    margin-bottom: 2%;
+  width: 80%;
+  background-color: #d9d9d9;
+  color: #555;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-bottom: 2%;
 }
 
 #petForm h2 {
-    color: #555;
-    margin-bottom: 0;
+  color: #555;
+  margin-bottom: 0;
 }
 
 .chk-box h2 {
-    color: #555;
-    margin-bottom: 10px;
-  }
-  
-  .chk-box {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Adds spacing between checkboxes */
-    align-items: center;
-  }
-  
-  .chk-box input[type="checkbox"] {
-    margin-right: 10px;
-    transform: scale(1.2); /* Makes checkboxes slightly larger */
-    cursor: pointer;
-  }
-  
-  .chk-box label {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    cursor: pointer;
-    width: 100px;
-  }
-  
-  /* Optional: If using labels for better accessibility */
-  .chk-box input[type="checkbox"] + label {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-  }
+  color: #555;
+  margin-bottom: 10px;
+}
 
-  #backBtn {
-    margin-right: 10px;
-  }
+.chk-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adds spacing between checkboxes */
+  align-items: center;
+}
+
+.chk-box input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2); /* Makes checkboxes slightly larger */
+  cursor: pointer;
+}
+
+.chk-box label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100px;
+}
+
+/* Optional: If using labels for better accessibility */
+.chk-box input[type="checkbox"] + label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#backBtn {
+  margin-right: 10px;
+}
