@@ -59,6 +59,8 @@
                 <h2>Pet Adoption Form</h2>
                 <?php if (isset($_GET['error']) && $_GET['error'] === '1') : ?>
                     <p style="color: red;">You have already sent an application to this pet.</p>
+                <?php elseif (isset($_GET['error']) && $_GET['error'] === '2') : ?>
+                    <p style="color: red;">Another applicant is currently pending for this pet. Try again another time.</p>
                 <?php endif; ?>
                 <form action="adopt-result.php" method="post">
                     <input type="number" value="<?= $petID ?>" name="petID" hidden>
@@ -71,19 +73,19 @@
                     </div>
                     <div class="form-group-1">
                         <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="fname" placeholder="Enter your first name">
+                        <input required type="text" id="fname" name="fname" placeholder="Enter your first name">
                     </div>
                     <div class="form-group-1">
                         <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+                        <input required type="text" id="lname" name="lname" placeholder="Enter your last name">
                     </div>
                     <div class="form-group-1">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                        <input required required type="email" id="email" name="email" placeholder="Enter your email">
                     </div>
                     <div class="form-group-1">
                         <label for="phonenum">Phone Number</label>
-                        <input type="text" id="phonenum" name="phonenum" placeholder="Enter your mobile number">
+                        <input required type="text" id="phonenum" name="phonenum" placeholder="Enter your mobile number">
                     </div>
                     <div class="form-group">
                         <p>Overall Household Income</p>
@@ -132,6 +134,12 @@
                             <label><input type="radio" name="residential" value="3">In rental with Pet Restrictions</label>
                         </div>
                     </div>
+
+                    <p>Please check:</p>
+                    <label><input type="checkbox" value="1" required>  I certify that the information above are factual and that falsification of information is sound for my disqualification.</label>
+                    <label><input type="checkbox" value="1" required>  I consent to share my information provided to Pet Connect - Caloocan and to its appropriate rehomer affiliate in accordance to the <a href="https://privacy.gov.ph/data-privacy-act/"><u>Data Privacy Act of 2012</u></a>.</label>
+                    <label><input type="checkbox" value="1" required>  I am aware of and understand the responsibilities of a pet owner as detailed by the <a href="https://legacy.senate.gov.ph/republic_acts/ra%209482.pdf"><u>Anti-Rabies Act of 2007</u></a>.</label><br />
+                    
                     <button type="submit" class="submit-btn">Submit</button>
                 </form>
             <?php endif; ?>

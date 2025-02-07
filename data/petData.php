@@ -70,3 +70,14 @@ function getPetRehomer($petID) {
     }
     return $rehomerUsername;
 }
+
+function getPetApplicants($petID) {
+    include "../pages/conn.php";
+    $sql = "SELECT * FROM adopter_data WHERE petID='$petID'";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {  
+        $row = $result->fetch_assoc();
+        $applicant = $row;
+        return $applicant;
+    }
+}

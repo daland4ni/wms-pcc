@@ -226,6 +226,8 @@ if (isset($_GET['error'])) {
         <?php endif; ?>
     </div>
 
+    <?php include 'footer.php' ?>
+
     <script>
         document.getElementById("img").addEventListener("change", function () {
             let fileName = this.files[0] ? this.files[0].name : "Choose a file";

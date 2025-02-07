@@ -125,14 +125,19 @@ if (!isset($_SESSION["username"])) {
                             Sex: <?= $pet['sex']; ?><br>
                             Breed: <?= $pet['breed']; ?><br><br>
                             <?= $pet['name']; ?> is <?= $pet['description']; ?><br><br>
-                            Adoptees: 0
+                            <?php if (getPetApplicants($petID) && !getPetApplicants($petID)['confirmed']) : ?>
+                                <a href="applicant.php?petID=<?=$petID?>"><button class="add-btn-1">View Applicant</button></a>
+                            <?php elseif (getPetApplicants($petID) && getPetApplicants($petID)['confirmed']) : 
+                                $applicant = getPetApplicants($petID);
+                                ?>
+                                <b><?=$applicant['fname'] . " " . $applicant['lname']?></b> | <?=$applicant['email']?> | <?=$applicant['phonenum']?>
+                            <?php endif; ?>
                         </p>
                         <a href="add-pet.php?petID=<?=$pet['petID'];?>" class="edit" >
                             <img src="../pics/edit.png" alt="edit"
                             style="height:2rem; width:2rem; position: absolute; 
                             top: 10px; right: 10px;
-                            "
-                            >
+                            ">
                         </a>
                     </div>
                 </div>

@@ -31,21 +31,24 @@
       foreach ($petIDs as $id):
         $pet = getPetData($id);
 
-        $finalAge;
-        if ($pet['age'] < 1) {
-          $finalAge = $pet['age'] * 10;
-          $finalAge = (string) $finalAge . " months old";
-        } else {
-          $finalAge = $pet['age'];
-          $finalAge = (string) $finalAge . " years old";
-        } ?>
+        $applicant = getPetApplicants($id);
+        if (!$applicant || ($applicant && $applicant['qualified']==0)):
+          $finalAge;
+          if ($pet['age'] < 1) {
+            $finalAge = $pet['age'] * 10;
+            $finalAge = (string) $finalAge . " months old";
+          } else {
+            $finalAge = $pet['age'];
+            $finalAge = (string) $finalAge . " years old";
+          } ?>
 
-        <div class="gallery-item">
-          <a href="<?= '#popup' . (string) $pet['petID']; ?>"><img src="<?= $pet['img']; ?>"></a>
-          <div class="caption"><b><?= $pet['name']; ?></b></div>
-        </div>
+          <div class="gallery-item">
+            <a href="<?= '#popup' . (string) $pet['petID']; ?>"><img src="<?= $pet['img']; ?>"></a>
+            <div class="caption"><b><?= $pet['name']; ?></b></div>
+          </div>
 
-      <?php endforeach; ?>
+        <?php endif;
+      endforeach; ?>
 
       <?php
       $petIDs = getPetIDs();

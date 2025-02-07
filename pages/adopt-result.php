@@ -74,10 +74,15 @@ if ($rehomer['honorific'] === 'male') {
 $qualified = $points >= 5;
 $confirmed = false;
 
-$checkUser = "SELECT * From adopter_data where phonenum='$phonenum'";
+$checkPet = "SELECT * From adopter_data where petID='$petID' and qualified='1'";
+$result1 = $conn->query($checkPet);
+if ($result1->num_rows > 0) {
+    header("Location: adopt.php?petID=" . $petID . "&error=2");
+    exit();
+} else {
+$checkUser = "SELECT * From adopter_data where phonenum='$phonenum' and petID='$petID'";
 $result = $conn->query($checkUser);
 if ($result->num_rows > 0) {
-    $_SESSION['msg'] = "You have already sent an application to this pet.";
     header("Location: adopt.php?petID=" . $petID . "&error=1");
     exit();
 } else {
@@ -85,6 +90,7 @@ if ($result->num_rows > 0) {
         VALUES ('$petID','$fname','$lname','$sex','$email','$phonenum','$qualified','$confirmed')";
     if ($conn->query($insertQuerty)) {
     }
+}
 }
 ?>
 

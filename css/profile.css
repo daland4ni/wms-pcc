@@ -96,7 +96,19 @@
   margin-left: 40%;
 }
 
-.add-btn:hover {
+.add-btn-1 {
+    width: 30%;
+    background: #3c5190;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+.add-btn:hover, .add-btn-1:hover {
   background: #5a54d3;
 }
 
