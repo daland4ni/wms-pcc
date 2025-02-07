@@ -1,195 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+/* General Styles */
 body {
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  background-color: #D1BDC7;
-  background: linear-gradient(rgba(209, 189, 199, 0.8), rgba(209, 189, 199, 0.8)), url('../pics/logoSmall.png') no-repeat center center fixed;
+  background: linear-gradient(rgba(209, 189, 199, 0.9), rgba(209, 189, 199, 0.9)), 
+              url('../pics/logoSmall.png') no-repeat center center fixed;
   background-size: cover;
 }
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 25px;
-  max-width: 1300px;
-  margin: 0 auto;
+.title {
+  font-size: 35px;
 }
 
 .content {
-  margin-top: 70px;
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Gallery Styles */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
 }
 
 .gallery-item {
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: box-shadow 0.3s ease-in-out;
-  padding: 10px;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-}
-
-.caption {
-  padding: 10px;
-  font-size: 14px;
-  color: #555;
-  background-color: white;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(5px);
-  border-radius: 8px;
-}
-
-.gallery-name {
-  color: #555;
-  margin-bottom: 0%;
-  font-size: 45px;
-  padding-bottom: 0;
-  font-weight: bold;
-  padding-left: 15vh;
-}
-
-.rehomers-description {
-  color: white;
-  font-size: 25px;
-  font-weight: 600;
-  padding-left: 15vh;
-  padding-right: 15vh;
-  margin-top: 9vh;
-  text-align: justify;
-  text-shadow: 2px 1px #000;
+  cursor: pointer;
 }
 
 .gallery-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-button {
-  background-color: #3C5190;
-    color: #FFF;
-    padding: 10px 20px;
-    font-size: 3vh;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-    font-family: Poppins;
-    display: block;
-    margin: 20px auto;
+.gallery-item img {
+  width: 100%;
+  border-radius: 10px;
 }
 
-@media (max-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Popup styles */
+/* Popup Styles */
 .popup {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: none;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex; /* Ensures popup displays correctly */
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  visibility: hidden; /* Hide initially */
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
 }
 
-.popup:target {
-  display: flex;
+.popup.show {
+  visibility: visible;
+  opacity: 1;
 }
 
+/* Popup Content */
 .popup-content {
+  position: relative;
   background: white;
   padding: 20px;
-  border-radius: 8px;
-  max-width: 650px;
-  width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  position: relative;
-  font-size: 20px;
-  text-align: left;
-
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Fix: Ensure pet images in popups don't zoom */
 .popup-content img {
-  width: 50%; 
-  height: auto;
+  width: 100%;
+  max-width: 400px;
   border-radius: 8px;
-  object-fit: cover;
+  transition: none;
 }
 
-
-.popup-text {
-  width: 60%;
-  padding-left: 35px;
-  text-align: left; 
-  font-size: 19px;
-}
-
-.popup-content .close {
+/* Close Button */
+.popup .close {
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 10px;
   background: none;
   border: none;
-  font-size: 25px;
+  font-size: 24px;
+  font-weight: bold;
   cursor: pointer;
-  color: #333;
+  color: #3C5190;
+  transition: 0.3s ease-in-out;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
-
-.popup-content .close:hover {
-  background: #D1BDC7;
+.popup .close:hover {
+  background: #3C5190;
   color: white;
 }
 
+/* Button Styles */
 button {
-  font-family: Poppins;
+  background: #3C5190;
   color: white;
-  background-color: #3C5190;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
-  width: 280px;
-  height: 40px;
-  border-radius: 6px;
-  font-size: 19px;
+  transition: 0.3s;
 }
 
-@media (max-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(3, 1fr);
+button:hover {
+  background: #2A3B70;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .popup-content {
+    max-width: 90%;
   }
-}
-
-@media (max-width: 480px) {
+  
   .gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
