@@ -135,27 +135,6 @@ if (!isset($_SESSION["username"])) {
                             >
                         </a>
                     </div>
-
-                    <div id="<?= 'popup' . (string) $pet['petID']; ?>" class="popup">
-                        <div class="popup-content-a">
-                            <h1 style="margin-right:10%;">Edit <?= $pet['name'] ?></h1>
-                            <form>
-                                <div style="margin-bottom:1vh;" class="form-group-1">
-                                    <label for="petName">Pet Name</label>
-                                    <input type="text" id="petName" name="petName" value="<?= $pet['name'] ?>"><br />
-                                </div>
-                                <div style="margin-bottom:1vh;" class="form-group-1">
-                                    <label for="petBreed">Pet Breed</label>
-                                    <input type="text" id="petBreed" name="petBreed" value="<?= $pet['breed'] ?>"><br />
-                                </div>
-                                <div style="margin-bottom:1vh;" class="form-group-1">
-                                    <label for="petDesc">Pet Description</label>
-                                    <input type="text" id="petDesc" name="petDesc" value="<?= $pet['description'] ?>"><br />
-                                </div>
-                            </form>
-                            <a href="#" class="close">✖</a>
-                        </div>
-                    </div>
                 </div>
             <?php endforeach; ?>
         <?php else: ?>
