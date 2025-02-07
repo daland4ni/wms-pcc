@@ -75,7 +75,8 @@
         <?php if (!isset($_GET["petID"])): ?>
 
             <h2>Add New Pet for Adoption</h2>
-            <form>
+            <form action="manage-pets.php?action=add" method="post" enctype="multipart/form-data">
+
                 <input type="text" name="username" value="<?=$_SESSION['username'];?>" hidden />
                 <div class="form-group">
                     <div class="radio-container-row">
@@ -90,9 +91,9 @@
                 <br><div class="age-group">
                     <label for="age">Age:</label>
                     <input type="number" id="age" name="age" placeholder="Enter your pet's age" required>
-                    <select>
-                        <option>year/s old</option>
-                        <option>month/s old</option>
+                    <select name="moyo">
+                        <option value="yo">year/s old</option>
+                        <option value="mo">month/s old</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -175,6 +176,11 @@
                         <label><input type="radio" name="sex" value="Female" <?php if ($pet['sex'] === 'Female')
                             echo 'checked'; ?> required>Female</label>
                     </div>
+                </div>
+                
+                <div class="form-group-1">
+                    <label for="breed">Pet's Breed</label>
+                    <input value="<?=$pet['breed']?>" type="text" id="breed" name="breed" placeholder="Enter your pet's breed" required>
                 </div>
                 <div class="form-group">
                     <p>Characteristics</p>
