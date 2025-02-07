@@ -127,7 +127,7 @@ if (!isset($_SESSION["username"])) {
                             <?= $pet['name']; ?> is <?= $pet['description']; ?><br><br>
                             Adoptees: 0
                         </p>
-                        <a href="<?= '#popup' . (string) $pet['petID']; ?>" class="edit" >
+                        <a href="add-pet.php?petID=<?=$pet['petID'];?>" class="edit" >
                             <img src="../pics/edit.png" alt="edit"
                             style="height:2rem; width:2rem; position: absolute; 
                             top: 10px; right: 10px;
