@@ -84,10 +84,12 @@ $matchingPets = array_filter($petsData, function ($pet) use ($petType, $petAge, 
                 <div class="pet-card">
                     <img src="<?= htmlspecialchars($pet['img']) ?>" alt="<?= htmlspecialchars($pet['name']) ?>">
                     <h3><?= htmlspecialchars($pet['name']) ?></h3>
-                    <p><strong>Gender:</strong> <?= htmlspecialchars($pet['sex']) ?></p>
-                    <p><strong>Breed:</strong> <?= htmlspecialchars($pet['breed']) ?></p>
-                    <p><strong>Age:</strong> <?= $finalAge ?></p>
-                    <p><?= htmlspecialchars($pet['description']) ?></p>
+                    <div class="details">
+                        <p><strong>Gender:</strong> <?= htmlspecialchars($pet['sex']) ?></p>
+                        <p><strong>Breed:</strong> <?= htmlspecialchars($pet['breed']) ?></p>
+                        <p><strong>Age:</strong> <?= $finalAge ?></p>
+                    </div>
+                    <p class="description"><?= htmlspecialchars($pet['description']) ?></p>
                     <a href="adopt.php?petID=<?=$pet['petID'];?>"><button>Adopt <?= $pet['name']; ?></button></a>
                 </div>
             <?php endforeach; ?>

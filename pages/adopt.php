@@ -37,7 +37,7 @@
             ?>
 
             <div class="selected-pet">
-                <img style="display: block; margin-left: auto; margin-right: auto; width: 30%;" src="<?= $petFound['img'] ?>" alt="pet pic" />
+                <img style="display: block; margin-left: auto; margin-right: auto; width: 30%; border-radius:8px;" src="<?= $petFound['img'] ?>" alt="pet pic" />
                 <h3 style="text-align: center">Adopting <?= $petFound['name'] ?></h3>
             </div>
 
