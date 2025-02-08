@@ -14,7 +14,6 @@ body {
     color: beige;
     padding: 10px 20px;
     z-index: 1000;
-    display: flex;
     align-items: center;
     background-color: #486989;
     font-weight: bold;
@@ -29,14 +28,15 @@ body {
     text-decoration: none;
 }
 
-/* .nav-left {
+ .nav-left {
     display: flex;
     align-items: center;
     text-decoration: none;  
     font-size: 20px;
     padding-right: 10%;
+    float: left;
     
-} */
+}
 
 .nav-left, .nav-right {
     color: beige;
@@ -52,7 +52,10 @@ a {
 }
 
 .nav-right {
-    padding-left: 10%;
+    display: flex;
+    float: right;
+    margin-top: 3vh;
+    margin-right: 3vh;
 }
 
 .nav-right a {
