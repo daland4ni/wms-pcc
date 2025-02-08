@@ -26,7 +26,7 @@
     align-items: center; /* Center content vertically */
     justify-content: space-between; /* Space out the content */
     padding: 45px;
-    padding-top: 20px;
+    padding-top: 150px;
     padding-bottom: 65px;
     border-radius: 8px; /* Rounded corners */
     font-family: Poppins;
@@ -90,6 +90,8 @@
     text-align: center; /* Center-align the heading */
     align-content: center;
     font-family: Poppins;
+    display: flex;
+    height: 100vh
 }
 
 /* Heading styling */
@@ -97,8 +99,9 @@
     font-size: 40px;
     color: #3C5190; /* Blue text */
     margin-bottom: 20px;
-    margin-top: 30px;
-
+    margin-top: 20%;
+    text-align: left;
+    font-weight: 900;
 }
 
 /* Featured container grid */
@@ -106,9 +109,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
     gap: 20px; /* Space between grid items */
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    place-items: center;
+    width: max-content; /* Shrinks to fit content */
+    margin: auto;
 }
 
 /* Individual grid items */
